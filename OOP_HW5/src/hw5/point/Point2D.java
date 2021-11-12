@@ -33,12 +33,12 @@ public class Point2D {
         this.y = y;
     }
 
-    public float[] getXY(){
-        return new float[] {x,y};
+    public float[] getXY() {
+        return new float[]{x, y};
     }
 
     @Override
-    public String toString(){
-        return String.format("(%f,%f)",x,y);
+    public String toString() {
+        return String.format("(%f,%f)", x, y);
     }
 }
