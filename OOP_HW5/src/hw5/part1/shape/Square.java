@@ -1,4 +1,4 @@
-package hw5.shape;
+package hw5.part1.shape;
 
 public class Square extends Rectangle {
     public Square() {

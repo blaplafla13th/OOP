@@ -1,4 +1,4 @@
-package hw5.people;
+package hw5.part1.people;
 
 public class Student extends Person {
     private String program;

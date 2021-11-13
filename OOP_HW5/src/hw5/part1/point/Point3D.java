@@ -1,4 +1,4 @@
-package hw5.point;
+package hw5.part1.point;
 
 public class Point3D extends Point2D {
     private float z = 0.0f;

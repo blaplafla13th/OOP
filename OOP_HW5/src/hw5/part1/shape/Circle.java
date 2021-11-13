@@ -1,18 +1,17 @@
-package hw5.circle;
+package hw5.part1.shape;
 
-public class Circle {
+public class Circle extends Shape {
     private double radius = 1.0;
-    private String color = "red";
 
     public Circle() {
     }
 
-    public Circle(double radius, String color) {
+    public Circle(double radius) {
         this.radius = radius;
-        this.color = color;
     }
 
-    public Circle(double radius) {
+    public Circle(double radius, String color, boolean filled) {
+        super(color, filled);
         this.radius = radius;
     }
 
@@ -24,20 +23,17 @@ public class Circle {
         this.radius = radius;
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
     public double getArea() {
         return Math.PI * radius * radius;
     }
 
+    public double getPerimeter() {
+        return 2 * Math.PI * radius;
+    }
+
     @Override
     public String toString() {
-        return String.format("Circle[radius=%f,color=%s", radius, color);
+        return String.format("A Circle with radius = %.2f, " +
+                "which is a subclass of %s]", radius, super.toString());
     }
 }

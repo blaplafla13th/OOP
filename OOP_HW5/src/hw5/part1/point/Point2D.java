@@ -1,4 +1,4 @@
-package hw5.point;
+package hw5.part1.point;
 
 public class Point2D {
     private float x = 0.0f;

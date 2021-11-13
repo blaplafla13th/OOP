@@ -1,4 +1,4 @@
-package hw5.circle;
+package hw5.part1.circle;
 
 public class Cylinder extends Circle {
     private double height = 1.0;

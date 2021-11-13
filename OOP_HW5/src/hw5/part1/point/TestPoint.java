@@ -1,4 +1,4 @@
-package hw5.point;
+package hw5.part1.point;
 
 public class TestPoint {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package hw5.point;
+package hw5.part1.point;
 
 public class MovablePoint extends Point2D {
     private float xSpeed = 0.0f;

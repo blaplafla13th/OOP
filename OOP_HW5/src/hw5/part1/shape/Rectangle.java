@@ -1,4 +1,4 @@
-package hw5.shape;
+package hw5.part1.shape;
 
 public class Rectangle extends Shape {
     private double width = 1.0;

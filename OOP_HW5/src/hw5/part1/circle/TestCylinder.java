@@ -1,4 +1,4 @@
-package hw5.circle;
+package hw5.part1.circle;
 
 public class TestCylinder {
     public static void main(String[] args) {

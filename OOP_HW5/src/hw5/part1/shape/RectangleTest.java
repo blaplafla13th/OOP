@@ -1,6 +1,4 @@
-package hw5.shape;
-
-import java.util.SortedMap;
+package hw5.part1.shape;
 
 public class RectangleTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package hw5.animal;
+package hw5.part1.animal;
 
 public class Mammal extends Animal {
     public Mammal(String name) {
