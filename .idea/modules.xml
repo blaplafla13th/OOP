@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/OOP.iml" filepath="$PROJECT_DIR$/.idea/OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP_HW1/OOP_HW1.iml" filepath="$PROJECT_DIR$/OOP_HW1/OOP_HW1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP_HW2/OOP_HW2.iml" filepath="$PROJECT_DIR$/OOP_HW2/OOP_HW2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP_HW3/OOP_HW3.iml" filepath="$PROJECT_DIR$/OOP_HW3/OOP_HW3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP_HW4/OOP_HW4.iml" filepath="$PROJECT_DIR$/OOP_HW4/OOP_HW4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP_HW5/OOP_HW5.iml" filepath="$PROJECT_DIR$/OOP_HW5/OOP_HW5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP_LAB1/OOP_LAB1.iml" filepath="$PROJECT_DIR$/OOP_LAB1/OOP_LAB1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP_LAB2/OOP_LAB2.iml" filepath="$PROJECT_DIR$/OOP_LAB2/OOP_LAB2.iml" />
+    </modules>
+  </component>
+</project>
