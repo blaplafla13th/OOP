@@ -49,7 +49,7 @@ public class MovablePoint extends Point2D {
     }
 
     public MovablePoint move() {
-        setXY(getX()+xSpeed,getY()+ySpeed);
+        setXY(getX() + xSpeed, getY() + ySpeed);
         return this;
     }
 }
