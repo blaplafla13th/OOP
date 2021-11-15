@@ -39,7 +39,7 @@ public class Cylinder extends Circle {
     }
 
     public double getArea() {
-        return 2 * Math.PI * getRadius() + 2 * super.getArea();
+        return 2 * Math.PI * getRadius() * height + 2 * super.getArea();
     }
 
     @Override

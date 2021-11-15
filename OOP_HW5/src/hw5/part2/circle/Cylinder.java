@@ -54,7 +54,7 @@ public class Cylinder {
     }
 
     public double getArea() {
-        return 2 * Math.PI * base.getRadius() + 2 * base.getArea();
+        return 2 * Math.PI * base.getRadius() * height + 2 * base.getArea();
     }
 
     @Override
