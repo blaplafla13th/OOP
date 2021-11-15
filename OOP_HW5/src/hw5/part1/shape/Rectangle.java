@@ -1,10 +1,12 @@
 package hw5.part1.shape;
 
 public class Rectangle extends Shape {
-    private double width = 1.0;
-    private double length = 1.0;
+    private double width;
+    private double length;
 
     public Rectangle() {
+        width = 1.0;
+        length = 1.0;
     }
 
     public Rectangle(double width, double length) {

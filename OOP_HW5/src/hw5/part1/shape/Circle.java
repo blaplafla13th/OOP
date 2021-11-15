@@ -1,9 +1,10 @@
 package hw5.part1.shape;
 
 public class Circle extends Shape {
-    private double radius = 1.0;
+    private double radius;
 
     public Circle() {
+        radius = 1.0;
     }
 
     public Circle(double radius) {

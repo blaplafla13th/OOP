@@ -1,10 +1,12 @@
 package hw5.part1.circle;
 
 public class Circle {
-    private double radius = 1.0;
-    private String color = "red";
+    private double radius;
+    private String color;
 
     public Circle() {
+        radius = 1.0;
+        color = "red";
     }
 
     public Circle(double radius, String color) {

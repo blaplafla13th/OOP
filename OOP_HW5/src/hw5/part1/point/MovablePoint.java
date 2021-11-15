@@ -1,8 +1,8 @@
 package hw5.part1.point;
 
 public class MovablePoint extends Point2D {
-    private float xSpeed = 0.0f;
-    private float ySpeed = 0.0f;
+    private float xSpeed;
+    private float ySpeed;
 
     public MovablePoint(float x, float y, float xSpeed, float ySpeed) {
         super(x, y);
@@ -16,6 +16,8 @@ public class MovablePoint extends Point2D {
     }
 
     public MovablePoint() {
+        xSpeed = 0.0f;
+        ySpeed = 0.0f;
     }
 
     public float getXSpeed() {

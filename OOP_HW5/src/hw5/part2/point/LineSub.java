@@ -14,7 +14,7 @@ public class LineSub extends Point {
     }
 
     public Point getBegin() {
-        return this ;
+        return this;
     }
 
     public void setBegin(Point begin) {

@@ -5,27 +5,27 @@ public class Cylinder {
     private double height;
 
     public Cylinder() {
-        base=new Circle();
-        height=1.0;
+        base = new Circle();
+        height = 1.0;
     }
 
     public Cylinder(double height) {
-        base=new Circle();
-        this.height=height;
+        base = new Circle();
+        this.height = height;
     }
 
     public Cylinder(Circle circle, double height) {
-        base=circle;
+        base = circle;
         this.height = height;
     }
 
     public Cylinder(double radius, double height) {
-        base=new Circle(radius);
+        base = new Circle(radius);
         this.height = height;
     }
 
     public Cylinder(double radius, double height, String color) {
-        base=new Circle(radius, color);
+        base = new Circle(radius, color);
         this.height = height;
     }
 
