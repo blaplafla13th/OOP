@@ -1,10 +1,12 @@
 package hw5.part1.point;
 
 public class Point2D {
-    private float x = 0.0f;
-    private float y = 0.0f;
+    private float x;
+    private float y;
 
     public Point2D() {
+        x = 0.0f;
+        y = 0.0f;
     }
 
     public Point2D(float x, float y) {

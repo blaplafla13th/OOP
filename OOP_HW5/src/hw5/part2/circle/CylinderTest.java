@@ -19,7 +19,7 @@ public class CylinderTest {
                 + ", Volume is " + cy1.getVolume()
                 + ", surface area=" + cy1.getArea());
 
-        Cylinder cy2 = new Cylinder(circle,5);
+        Cylinder cy2 = new Cylinder(circle, 5);
         System.out.println("Radius is " + cy2.getBase().getRadius()
                 + ", Height is " + cy2.getHeight()
                 + ", Color is " + cy2.getBase().getColor()
@@ -27,7 +27,7 @@ public class CylinderTest {
                 + ", Volume is " + cy2.getVolume()
                 + ", surface area=" + cy2.getArea());
 
-        Cylinder cy3 = new Cylinder(2,5);
+        Cylinder cy3 = new Cylinder(2, 5);
         System.out.println("Radius is " + cy3.getBase().getRadius()
                 + ", Height is " + cy3.getHeight()
                 + ", Color is " + cy3.getBase().getColor()

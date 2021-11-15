@@ -1,10 +1,12 @@
 package hw5.part1.shape;
 
 public class Shape {
-    private String color = "red";
-    private boolean filled = true;
+    private String color;
+    private boolean filled;
 
     public Shape() {
+        color = "red";
+        filled = true;
     }
 
     public Shape(String color, boolean filled) {

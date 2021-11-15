@@ -1,10 +1,12 @@
 package hw5.part2.point;
 
 public class Point {
-    private int x = 0;
-    private int y = 0;
+    private int x;
+    private int y;
 
     public Point() {
+        x = 0;
+        y = 0;
     }
 
     public Point(int x, int y) {
