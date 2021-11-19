@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="OOP_HW1" />
+    <orderEntry type="module" module-name="OOP_HW2" />
+    <orderEntry type="module" module-name="OOP_HW3" />
+    <orderEntry type="module" module-name="OOP_HW4" />
+    <orderEntry type="module" module-name="OOP_HW5" />
+    <orderEntry type="module" module-name="OOP_LAB1" />
+    <orderEntry type="module" module-name="OOP_LAB2" />
+  </component>
+</module>
