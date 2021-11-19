@@ -1,4 +1,4 @@
-package hw4.polynomial;
+package hw4.part1.polynomial;
 
 public class MyPolynomialTest {
     public static void main(String[] args) {

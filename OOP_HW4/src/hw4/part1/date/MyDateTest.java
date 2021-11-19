@@ -1,4 +1,4 @@
-package hw4.date;
+package hw4.part1.date;
 
 public class MyDateTest {
     public static void main(String[] args) {

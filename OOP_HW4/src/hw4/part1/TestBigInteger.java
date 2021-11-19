@@ -1,4 +1,4 @@
-package hw4;
+package hw4.part1;
 
 import java.math.BigInteger;
 

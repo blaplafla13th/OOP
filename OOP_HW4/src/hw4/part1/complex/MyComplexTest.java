@@ -1,4 +1,4 @@
-package hw4.complex;
+package hw4.part1.complex;
 
 public class MyComplexTest {
     public static void main(String[] args) {

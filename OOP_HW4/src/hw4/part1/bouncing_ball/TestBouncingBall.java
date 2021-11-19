@@ -1,4 +1,4 @@
-package hw4.bouncing_ball;
+package hw4.part1.bouncing_ball;
 
 public class TestBouncingBall {
     public static void main(String[] args) {

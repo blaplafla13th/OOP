@@ -1,4 +1,4 @@
-package hw4.complex;
+package hw4.part1.complex;
 
 public class MyComplex {
     private double real = 0.0;

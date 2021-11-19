@@ -1,4 +1,4 @@
-package hw4.time;
+package hw4.part1.time;
 
 public class TestMyTime {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package hw4.complex;
+package hw4.part1.complex;
 
 import java.util.Scanner;
 

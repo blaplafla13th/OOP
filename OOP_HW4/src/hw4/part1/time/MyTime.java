@@ -1,4 +1,4 @@
-package hw4.time;
+package hw4.part1.time;
 
 public class MyTime {
     private int hour;

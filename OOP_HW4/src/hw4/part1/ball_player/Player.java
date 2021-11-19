@@ -1,4 +1,4 @@
-package hw4.ball_player;
+package hw4.part1.ball_player;
 
 public class Player {
     private int number;
