@@ -2,3 +2,4 @@
 *.class
 */out/
 /out/
+.idea/uiDesigner.xml
