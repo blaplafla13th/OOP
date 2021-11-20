@@ -28,8 +28,10 @@ echo "switch (input()) {" >>$file
 for ((i = 0; i < ${#listFolder[@]}; i++)); do
   echo "case $((i+1)): run${listFolder[i]}(); break;" >>$file
 done
+echo "case 0: break;">>$file
+echo "default: main(arrayTest);">>$file
 echo "}" >>$file
-#start switch folder
+#end switch folder
 echo "}" >>$file
 #end main
 
@@ -45,13 +47,18 @@ for i in "${listFolder[@]}"; do
     temp=`echo ${listMain[j]} | awk -F"." '{if (index($2,"part")==0) {print $2} else if (index($4,"Test")!=0) {print ($3,$4)}}'`
     echo "System.out.println(\"$((j+1)): $temp\");" >> $file
   done
+  echo "System.out.println(\"0: Back\");" >> $file
   #end print case
 
   #print switch case
+  echo "int i = input();" >> $file
   echo "switch (input()) {" >>$file
+  echo "System.out.println(\"Function Run: \");" >>$file
   for ((j = 0; j < ${#listMain[@]}; j++)); do
-    echo "case $((j+1)): System.out.println(\"Function Run: \"); ${listMain[j]}.main(arrayTest);break;">>$file
+    echo "case $((j+1)): ${listMain[j]}.main(arrayTest);break;">>$file
   done
+  echo "case 0: main(arrayTest);break;">>$file
+  echo "default: run$i();">>$file
   echo "}" >>$file
   #end print switch case
   echo "}" >>$file
