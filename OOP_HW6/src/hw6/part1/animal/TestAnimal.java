@@ -25,10 +25,10 @@ public class TestAnimal {
         BigDog bigDog2 = (BigDog) animal3;
         Dog dog3 = (Dog) animal3;
         //Cat cat2 = (Cat)animal2;
-        dog2.greeting(dog3);
-        dog3.greeting(dog2);
-        dog2.greeting(bigDog2);
-        bigDog2.greeting(dog2);
-        bigDog2.greeting(bigDog1);
+        dog2.greets(dog3);
+        dog3.greets(dog2);
+        dog2.greets(bigDog2);
+        bigDog2.greets(dog2);
+        bigDog2.greets(bigDog1);
     }
 }
