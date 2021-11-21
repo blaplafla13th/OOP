@@ -16,7 +16,7 @@ public class BigDog extends Dog {
         System.out.println("Woooooow");
     }
 
-    public BigDog(String name) {
-        super(name);
+    public void greets(BigDog another) {
+        System.out.println("Wooooooooow");
     }
 }
