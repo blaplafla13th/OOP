@@ -12,8 +12,9 @@ public class Combine {
         System.out.println("3: HW3");
         System.out.println("4: HW4");
         System.out.println("5: HW5");
-        System.out.println("6: LAB1");
-        System.out.println("7: LAB2");
+        System.out.println("6: HW6");
+        System.out.println("7: LAB1");
+        System.out.println("8: LAB2");
         switch (input()) {
             case 1:
                 runHW1();
@@ -31,11 +32,18 @@ public class Combine {
                 runHW5();
                 break;
             case 6:
-                runLAB1();
+                runHW6();
                 break;
             case 7:
+                runLAB1();
+                break;
+            case 8:
                 runLAB2();
                 break;
+            case 0:
+                break;
+            default:
+                main(arrayTest);
         }
     }
 
@@ -63,95 +71,81 @@ public class Combine {
         System.out.println("20: TestPalindromicPhrase");
         System.out.println("21: TimeTable");
         System.out.println("22: TriangularPattern");
+        System.out.println("0: Back");
+        int i = input();
+        System.out.println("Function Run: ");
         switch (input()) {
             case 1:
-                System.out.println("Function Run: ");
                 hw1.Bin2Dec.main(arrayTest);
                 break;
             case 2:
-                System.out.println("Function Run: ");
                 hw1.BoxPattern.main(arrayTest);
                 break;
             case 3:
-                System.out.println("Function Run: ");
                 hw1.CeasarCode.main(arrayTest);
                 break;
             case 4:
-                System.out.println("Function Run: ");
                 hw1.CheckerPattern.main(arrayTest);
                 break;
             case 5:
-                System.out.println("Function Run: ");
                 hw1.CheckHexStr.main(arrayTest);
                 break;
             case 6:
-                System.out.println("Function Run: ");
                 hw1.CountVowelsDigits.main(arrayTest);
                 break;
             case 7:
-                System.out.println("Function Run: ");
                 hw1.DecipherCeasarCode.main(arrayTest);
                 break;
             case 8:
-                System.out.println("Function Run: ");
                 hw1.ExchangeCipher.main(arrayTest);
                 break;
             case 9:
-                System.out.println("Function Run: ");
                 hw1.Factorial.main(arrayTest);
                 break;
             case 10:
-                System.out.println("Function Run: ");
                 hw1.Hex2Dec.main(arrayTest);
                 break;
             case 11:
-                System.out.println("Function Run: ");
                 hw1.HillPattern.main(arrayTest);
                 break;
             case 12:
-                System.out.println("Function Run: ");
                 hw1.Oct2Dec.main(arrayTest);
                 break;
             case 13:
-                System.out.println("Function Run: ");
                 hw1.PhoneKeyPadA.main(arrayTest);
                 break;
             case 14:
-                System.out.println("Function Run: ");
                 hw1.PhoneKeyPadB.main(arrayTest);
                 break;
             case 15:
-                System.out.println("Function Run: ");
                 hw1.RadixN2Dec.main(arrayTest);
                 break;
             case 16:
-                System.out.println("Function Run: ");
                 hw1.RadixN2DecRewrite.main(arrayTest);
                 break;
             case 17:
-                System.out.println("Function Run: ");
                 hw1.ReverseString.main(arrayTest);
                 break;
             case 18:
-                System.out.println("Function Run: ");
                 hw1.SquarePattern.main(arrayTest);
                 break;
             case 19:
-                System.out.println("Function Run: ");
                 hw1.SquarePattern1.main(arrayTest);
                 break;
             case 20:
-                System.out.println("Function Run: ");
                 hw1.TestPalindromicPhrase.main(arrayTest);
                 break;
             case 21:
-                System.out.println("Function Run: ");
                 hw1.TimeTable.main(arrayTest);
                 break;
             case 22:
-                System.out.println("Function Run: ");
                 hw1.TriangularPattern.main(arrayTest);
                 break;
+            case 0:
+                main(arrayTest);
+                break;
+            default:
+                runHW1();
         }
     }
 
@@ -180,99 +174,84 @@ public class Combine {
         System.out.println("21: TribonacciIntHandlingOverflow");
         System.out.println("22: TrigonometricSeries");
         System.out.println("23: WordGuess");
+        System.out.println("0: Back");
+        int i = input();
+        System.out.println("Function Run: ");
         switch (input()) {
             case 1:
-                System.out.println("Function Run: ");
                 hw2.BubbleSort.main(arrayTest);
                 break;
             case 2:
-                System.out.println("Function Run: ");
                 hw2.DateUtil.main(arrayTest);
                 break;
             case 3:
-                System.out.println("Function Run: ");
                 hw2.FactorialHandlingOverflow.main(arrayTest);
                 break;
             case 4:
-                System.out.println("Function Run: ");
                 hw2.FactorialRecursion.main(arrayTest);
                 break;
             case 5:
-                System.out.println("Function Run: ");
                 hw2.FibonacciIntHandlingOverflow.main(arrayTest);
                 break;
             case 6:
-                System.out.println("Function Run: ");
                 hw2.FibonacciRecursive.main(arrayTest);
                 break;
             case 7:
-                System.out.println("Function Run: ");
                 hw2.GCD.main(arrayTest);
                 break;
             case 8:
-                System.out.println("Function Run: ");
                 hw2.GCDRecursive.main(arrayTest);
                 break;
             case 9:
-                System.out.println("Function Run: ");
                 hw2.InsertionSort.main(arrayTest);
                 break;
             case 10:
-                System.out.println("Function Run: ");
                 hw2.LengthOfARunningNumberSequenceRecursive.main(arrayTest);
                 break;
             case 11:
-                System.out.println("Function Run: ");
                 hw2.LinearSearch.main(arrayTest);
                 break;
             case 12:
-                System.out.println("Function Run: ");
                 hw2.Matrix.main(arrayTest);
                 break;
             case 13:
-                System.out.println("Function Run: ");
                 hw2.NumberConversion.main(arrayTest);
                 break;
             case 14:
-                System.out.println("Function Run: ");
                 hw2.NumberGuest.main(arrayTest);
                 break;
             case 15:
-                System.out.println("Function Run: ");
                 hw2.PerfectNumberList.main(arrayTest);
                 break;
             case 16:
-                System.out.println("Function Run: ");
                 hw2.PerfectPrimeFactorList.main(arrayTest);
                 break;
             case 17:
-                System.out.println("Function Run: ");
                 hw2.PrimeList.main(arrayTest);
                 break;
             case 18:
-                System.out.println("Function Run: ");
                 hw2.RecursiveBinarySearch.main(arrayTest);
                 break;
             case 19:
-                System.out.println("Function Run: ");
                 hw2.SelectionSort.main(arrayTest);
                 break;
             case 20:
-                System.out.println("Function Run: ");
                 hw2.SpecialSeries.main(arrayTest);
                 break;
             case 21:
-                System.out.println("Function Run: ");
                 hw2.TribonacciIntHandlingOverflow.main(arrayTest);
                 break;
             case 22:
-                System.out.println("Function Run: ");
                 hw2.TrigonometricSeries.main(arrayTest);
                 break;
             case 23:
-                System.out.println("Function Run: ");
                 hw2.WordGuess.main(arrayTest);
                 break;
+            case 0:
+                main(arrayTest);
+                break;
+            default:
+                runHW2();
         }
     }
 
@@ -294,71 +273,63 @@ public class Combine {
         System.out.println("14: mypoint MyPointTest");
         System.out.println("15: mypoint MyRectangleTest");
         System.out.println("16: mypoint MyTriangleTest");
+        System.out.println("0: Back");
+        int i = input();
+        System.out.println("Function Run: ");
         switch (input()) {
             case 1:
-                System.out.println("Function Run: ");
                 hw3.part1.account.TestMain.main(arrayTest);
                 break;
             case 2:
-                System.out.println("Function Run: ");
                 hw3.part1.ball.TestMain.main(arrayTest);
                 break;
             case 3:
-                System.out.println("Function Run: ");
                 hw3.part1.circle1.TestCircle.main(arrayTest);
                 break;
             case 4:
-                System.out.println("Function Run: ");
                 hw3.part1.circle2.TestMain.main(arrayTest);
                 break;
             case 5:
-                System.out.println("Function Run: ");
                 hw3.part1.date.TestMain.main(arrayTest);
                 break;
             case 6:
-                System.out.println("Function Run: ");
                 hw3.part1.employee.TestMain.main(arrayTest);
                 break;
             case 7:
-                System.out.println("Function Run: ");
                 hw3.part1.invoiceitem.TestMain.main(arrayTest);
                 break;
             case 8:
-                System.out.println("Function Run: ");
                 hw3.part1.rectangle.TestMain.main(arrayTest);
                 break;
             case 9:
-                System.out.println("Function Run: ");
                 hw3.part1.time.TestMain.main(arrayTest);
                 break;
             case 10:
-                System.out.println("Function Run: ");
                 hw3.part2.account.TestMain.main(arrayTest);
                 break;
             case 11:
-                System.out.println("Function Run: ");
                 hw3.part2.invoice.TestMain.main(arrayTest);
                 break;
             case 12:
-                System.out.println("Function Run: ");
                 hw3.part2.mypoint.MyCircleTest.main(arrayTest);
                 break;
             case 13:
-                System.out.println("Function Run: ");
                 hw3.part2.mypoint.MyLineTest.main(arrayTest);
                 break;
             case 14:
-                System.out.println("Function Run: ");
                 hw3.part2.mypoint.MyPointTest.main(arrayTest);
                 break;
             case 15:
-                System.out.println("Function Run: ");
                 hw3.part2.mypoint.MyRectangleTest.main(arrayTest);
                 break;
             case 16:
-                System.out.println("Function Run: ");
                 hw3.part2.mypoint.MyTriangleTest.main(arrayTest);
                 break;
+            case 0:
+                main(arrayTest);
+                break;
+            default:
+                runHW3();
         }
     }
 
@@ -371,35 +342,36 @@ public class Combine {
         System.out.println("5: date MyDateTest");
         System.out.println("6: polynomial MyPolynomialTest");
         System.out.println("7: time TestMyTime");
+        System.out.println("0: Back");
+        int i = input();
+        System.out.println("Function Run: ");
         switch (input()) {
             case 1:
-                System.out.println("Function Run: ");
                 hw4.part1.ball_player.TestBall.main(arrayTest);
                 break;
             case 2:
-                System.out.println("Function Run: ");
                 hw4.part1.ball_player.TestPlayer.main(arrayTest);
                 break;
             case 3:
-                System.out.println("Function Run: ");
                 hw4.part1.bouncing_ball.TestBouncingBall.main(arrayTest);
                 break;
             case 4:
-                System.out.println("Function Run: ");
                 hw4.part1.complex.MyComplexTest.main(arrayTest);
                 break;
             case 5:
-                System.out.println("Function Run: ");
                 hw4.part1.date.MyDateTest.main(arrayTest);
                 break;
             case 6:
-                System.out.println("Function Run: ");
                 hw4.part1.polynomial.MyPolynomialTest.main(arrayTest);
                 break;
             case 7:
-                System.out.println("Function Run: ");
                 hw4.part1.time.TestMyTime.main(arrayTest);
                 break;
+            case 0:
+                main(arrayTest);
+                break;
+            default:
+                runHW4();
         }
     }
 
@@ -417,55 +389,97 @@ public class Combine {
         System.out.println("10: point TestLine");
         System.out.println("11: point TestLineSub");
         System.out.println("12: point TestPoint");
+        System.out.println("0: Back");
+        int i = input();
+        System.out.println("Function Run: ");
         switch (input()) {
             case 1:
-                System.out.println("Function Run: ");
                 hw5.part1.animal.TestMain.main(arrayTest);
                 break;
             case 2:
-                System.out.println("Function Run: ");
                 hw5.part1.circle.TestCylinder.main(arrayTest);
                 break;
             case 3:
-                System.out.println("Function Run: ");
                 hw5.part1.people.TestPerson.main(arrayTest);
                 break;
             case 4:
-                System.out.println("Function Run: ");
                 hw5.part1.point.TestPoint.main(arrayTest);
                 break;
             case 5:
-                System.out.println("Function Run: ");
                 hw5.part1.shape.CircleTest.main(arrayTest);
                 break;
             case 6:
-                System.out.println("Function Run: ");
                 hw5.part1.shape.RectangleTest.main(arrayTest);
                 break;
             case 7:
-                System.out.println("Function Run: ");
                 hw5.part1.shape.ShapeTest.main(arrayTest);
                 break;
             case 8:
-                System.out.println("Function Run: ");
                 hw5.part1.shape.SquareTest.main(arrayTest);
                 break;
             case 9:
-                System.out.println("Function Run: ");
                 hw5.part2.circle.CylinderTest.main(arrayTest);
                 break;
             case 10:
-                System.out.println("Function Run: ");
                 hw5.part2.point.TestLine.main(arrayTest);
                 break;
             case 11:
-                System.out.println("Function Run: ");
                 hw5.part2.point.TestLineSub.main(arrayTest);
                 break;
             case 12:
-                System.out.println("Function Run: ");
                 hw5.part2.point.TestPoint.main(arrayTest);
                 break;
+            case 0:
+                main(arrayTest);
+                break;
+            default:
+                runHW5();
+        }
+    }
+
+    public static void runHW6() {
+        System.out.println("Nhập lựa chọn của bạn:");
+        System.out.println("1: animal TestAnimal");
+        System.out.println("2: geometricobject TestMain");
+        System.out.println("3: movable TestMovableCircle");
+        System.out.println("4: movable TestMovablePoint");
+        System.out.println("5: movable TestMovableRectangle");
+        System.out.println("6: resizable TestCircle");
+        System.out.println("7: resizable TestResizableCircle");
+        System.out.println("8: shape TestMain");
+        System.out.println("0: Back");
+        int i = input();
+        System.out.println("Function Run: ");
+        switch (input()) {
+            case 1:
+                hw6.part1.animal.TestAnimal.main(arrayTest);
+                break;
+            case 2:
+                hw6.part1.geometricobject.TestMain.main(arrayTest);
+                break;
+            case 3:
+                hw6.part1.movable.TestMovableCircle.main(arrayTest);
+                break;
+            case 4:
+                hw6.part1.movable.TestMovablePoint.main(arrayTest);
+                break;
+            case 5:
+                hw6.part1.movable.TestMovableRectangle.main(arrayTest);
+                break;
+            case 6:
+                hw6.part1.resizable.TestCircle.main(arrayTest);
+                break;
+            case 7:
+                hw6.part1.resizable.TestResizableCircle.main(arrayTest);
+                break;
+            case 8:
+                hw6.part1.shape.TestMain.main(arrayTest);
+                break;
+            case 0:
+                main(arrayTest);
+                break;
+            default:
+                runHW6();
         }
     }
 
@@ -499,119 +513,99 @@ public class Combine {
         System.out.println("26: SumProductMinMax3");
         System.out.println("27: SumProductMinMax5");
         System.out.println("28: Tribonacci");
+        System.out.println("0: Back");
+        int i = input();
+        System.out.println("Function Run: ");
         switch (input()) {
             case 1:
-                System.out.println("Function Run: ");
                 lab1.AverageWithInputValidation.main(arrayTest);
                 break;
             case 2:
-                System.out.println("Function Run: ");
                 lab1.CheckOddEven.main(arrayTest);
                 break;
             case 3:
-                System.out.println("Function Run: ");
                 lab1.CheckPassFail.main(arrayTest);
                 break;
             case 4:
-                System.out.println("Function Run: ");
                 lab1.CircleComputation.main(arrayTest);
                 break;
             case 5:
-                System.out.println("Function Run: ");
                 lab1.ComputePI12.main(arrayTest);
                 break;
             case 6:
-                System.out.println("Function Run: ");
                 lab1.ComputerPI.main(arrayTest);
                 break;
             case 7:
-                System.out.println("Function Run: ");
                 lab1.CylinderComputation.main(arrayTest);
                 break;
             case 8:
-                System.out.println("Function Run: ");
                 lab1.ExtractDigits.main(arrayTest);
                 break;
             case 9:
-                System.out.println("Function Run: ");
                 lab1.Fibonacci.main(arrayTest);
                 break;
             case 10:
-                System.out.println("Function Run: ");
                 lab1.HarmonicSum.main(arrayTest);
                 break;
             case 11:
-                System.out.println("Function Run: ");
                 lab1.InputValidation.main(arrayTest);
                 break;
             case 12:
-                System.out.println("Function Run: ");
                 lab1.PensionContributionCalculator.main(arrayTest);
                 break;
             case 13:
-                System.out.println("Function Run: ");
                 lab1.PensionContributionCalculatorWithSentinel.main(arrayTest);
                 break;
             case 14:
-                System.out.println("Function Run: ");
                 lab1.PrintDayInWordA.main(arrayTest);
                 break;
             case 15:
-                System.out.println("Function Run: ");
                 lab1.PrintDayInWordB.main(arrayTest);
                 break;
             case 16:
-                System.out.println("Function Run: ");
                 lab1.PrintNumberInWordA.main(arrayTest);
                 break;
             case 17:
-                System.out.println("Function Run: ");
                 lab1.PrintNumberInWordB.main(arrayTest);
                 break;
             case 18:
-                System.out.println("Function Run: ");
                 lab1.ReverseInt.main(arrayTest);
                 break;
             case 19:
-                System.out.println("Function Run: ");
                 lab1.SphereComputation.main(arrayTest);
                 break;
             case 20:
-                System.out.println("Function Run: ");
                 lab1.SumAverageRunningInt.main(arrayTest);
                 break;
             case 21:
-                System.out.println("Function Run: ");
                 lab1.SumAverageRunningInt1.main(arrayTest);
                 break;
             case 22:
-                System.out.println("Function Run: ");
                 lab1.SumAverageRunningInt2.main(arrayTest);
                 break;
             case 23:
-                System.out.println("Function Run: ");
                 lab1.SumAverageRunningInt4.main(arrayTest);
                 break;
             case 24:
-                System.out.println("Function Run: ");
                 lab1.SumAverageRunningInt5.main(arrayTest);
                 break;
             case 25:
-                System.out.println("Function Run: ");
                 lab1.SumAverageRunningInt6.main(arrayTest);
                 break;
             case 26:
-                System.out.println("Function Run: ");
                 lab1.SumProductMinMax3.main(arrayTest);
                 break;
             case 27:
-                System.out.println("Function Run: ");
                 lab1.SumProductMinMax5.main(arrayTest);
                 break;
             case 28:
-                System.out.println("Function Run: ");
                 lab1.Tribonacci.main(arrayTest);
                 break;
+            case 0:
+                main(arrayTest);
+                break;
+            default:
+                runLAB1();
         }
     }
 
@@ -634,75 +628,66 @@ public class Combine {
         System.out.println("15: Reverse");
         System.out.println("16: Search");
         System.out.println("17: Swap");
+        System.out.println("0: Back");
+        int i = input();
+        System.out.println("Function Run: ");
         switch (input()) {
             case 1:
-                System.out.println("Function Run: ");
                 lab2.ArrayToString.main(arrayTest);
                 break;
             case 2:
-                System.out.println("Function Run: ");
                 lab2.Contains.main(arrayTest);
                 break;
             case 3:
-                System.out.println("Function Run: ");
                 lab2.CopyOf.main(arrayTest);
                 break;
             case 4:
-                System.out.println("Function Run: ");
                 lab2.Dec2Hex.main(arrayTest);
                 break;
             case 5:
-                System.out.println("Function Run: ");
                 lab2.Equals.main(arrayTest);
                 break;
             case 6:
-                System.out.println("Function Run: ");
                 lab2.Exponent.main(arrayTest);
                 break;
             case 7:
-                System.out.println("Function Run: ");
                 lab2.GradesHistogram.main(arrayTest);
                 break;
             case 8:
-                System.out.println("Function Run: ");
                 lab2.GradesStatistics1_3.main(arrayTest);
                 break;
             case 9:
-                System.out.println("Function Run: ");
                 lab2.GradesStatistics2_11.main(arrayTest);
                 break;
             case 10:
-                System.out.println("Function Run: ");
                 lab2.Hex2Bin.main(arrayTest);
                 break;
             case 11:
-                System.out.println("Function Run: ");
                 lab2.MagicSum.main(arrayTest);
                 break;
             case 12:
-                System.out.println("Function Run: ");
                 lab2.Print.main(arrayTest);
                 break;
             case 13:
-                System.out.println("Function Run: ");
                 lab2.PrintArray.main(arrayTest);
                 break;
             case 14:
-                System.out.println("Function Run: ");
                 lab2.PrintArrayInStars.main(arrayTest);
                 break;
             case 15:
-                System.out.println("Function Run: ");
                 lab2.Reverse.main(arrayTest);
                 break;
             case 16:
-                System.out.println("Function Run: ");
                 lab2.Search.main(arrayTest);
                 break;
             case 17:
-                System.out.println("Function Run: ");
                 lab2.Swap.main(arrayTest);
                 break;
+            case 0:
+                main(arrayTest);
+                break;
+            default:
+                runLAB2();
         }
     }
 
