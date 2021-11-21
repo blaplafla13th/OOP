@@ -52,8 +52,8 @@ for i in "${listFolder[@]}"; do
 
   #print switch case
   echo "int i = input();" >> $file
-  echo "switch (input()) {" >>$file
   echo "System.out.println(\"Function Run: \");" >>$file
+  echo "switch (input()) {" >>$file
   for ((j = 0; j < ${#listMain[@]}; j++)); do
     echo "case $((j+1)): ${listMain[j]}.main(arrayTest);break;">>$file
   done
