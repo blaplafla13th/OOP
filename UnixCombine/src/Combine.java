@@ -74,7 +74,7 @@ public class Combine {
         System.out.println("0: Back");
         int i = input();
         System.out.println("Function Run: ");
-        switch (input()) {
+        switch (i) {
             case 1:
                 hw1.Bin2Dec.main(arrayTest);
                 break;
@@ -177,7 +177,7 @@ public class Combine {
         System.out.println("0: Back");
         int i = input();
         System.out.println("Function Run: ");
-        switch (input()) {
+        switch (i) {
             case 1:
                 hw2.BubbleSort.main(arrayTest);
                 break;
@@ -276,7 +276,7 @@ public class Combine {
         System.out.println("0: Back");
         int i = input();
         System.out.println("Function Run: ");
-        switch (input()) {
+        switch (i) {
             case 1:
                 hw3.part1.account.TestMain.main(arrayTest);
                 break;
@@ -345,7 +345,7 @@ public class Combine {
         System.out.println("0: Back");
         int i = input();
         System.out.println("Function Run: ");
-        switch (input()) {
+        switch (i) {
             case 1:
                 hw4.part1.ball_player.TestBall.main(arrayTest);
                 break;
@@ -392,7 +392,7 @@ public class Combine {
         System.out.println("0: Back");
         int i = input();
         System.out.println("Function Run: ");
-        switch (input()) {
+        switch (i) {
             case 1:
                 hw5.part1.animal.TestMain.main(arrayTest);
                 break;
@@ -450,7 +450,7 @@ public class Combine {
         System.out.println("0: Back");
         int i = input();
         System.out.println("Function Run: ");
-        switch (input()) {
+        switch (i) {
             case 1:
                 hw6.part1.animal.TestAnimal.main(arrayTest);
                 break;
@@ -516,7 +516,7 @@ public class Combine {
         System.out.println("0: Back");
         int i = input();
         System.out.println("Function Run: ");
-        switch (input()) {
+        switch (i) {
             case 1:
                 lab1.AverageWithInputValidation.main(arrayTest);
                 break;
@@ -631,7 +631,7 @@ public class Combine {
         System.out.println("0: Back");
         int i = input();
         System.out.println("Function Run: ");
-        switch (input()) {
+        switch (i) {
             case 1:
                 lab2.ArrayToString.main(arrayTest);
                 break;
