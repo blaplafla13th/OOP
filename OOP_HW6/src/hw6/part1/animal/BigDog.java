@@ -1,6 +1,11 @@
 package hw6.part1.animal;
 
 public class BigDog extends Dog {
+
+    public BigDog(String name) {
+        super(name);
+    }
+
     @Override
     public void greets() {
         System.out.println("Woow");
