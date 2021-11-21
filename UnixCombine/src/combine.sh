@@ -21,6 +21,7 @@ for folder in OOP_*; do
   listFolder+=($temp)
   i=$((i+1))
 done
+echo "System.out.println(\"0: Exit\");" >>$file
 #end print case
 
 #start switch folder

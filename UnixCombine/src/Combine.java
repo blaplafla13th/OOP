@@ -15,6 +15,7 @@ public class Combine {
         System.out.println("6: HW6");
         System.out.println("7: LAB1");
         System.out.println("8: LAB2");
+        System.out.println("0: Exit");
         switch (input()) {
             case 1:
                 runHW1();
