@@ -1,5 +1,5 @@
 # cd to OOP project folder
-file="./UnixCombine/src/Combine.java"
+file="./UnixCombine/src/Menu.java"
 # find ./ -name "*.java" | sed 's/.*src\///g' | sed 's/\//./g' --> list all java file with java package format
 
 echo >$file

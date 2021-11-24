@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Menu/Menu.iml" filepath="$PROJECT_DIR$/Menu/Menu.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/OOP.iml" filepath="$PROJECT_DIR$/.idea/OOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP_HW1/OOP_HW1.iml" filepath="$PROJECT_DIR$/OOP_HW1/OOP_HW1.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP_HW2/OOP_HW2.iml" filepath="$PROJECT_DIR$/OOP_HW2/OOP_HW2.iml" />
@@ -11,7 +12,6 @@
       <module fileurl="file://$PROJECT_DIR$/OOP_HW6/OOP_HW6.iml" filepath="$PROJECT_DIR$/OOP_HW6/OOP_HW6.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP_LAB1/OOP_LAB1.iml" filepath="$PROJECT_DIR$/OOP_LAB1/OOP_LAB1.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP_LAB2/OOP_LAB2.iml" filepath="$PROJECT_DIR$/OOP_LAB2/OOP_LAB2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/UnixCombine/UnixCombine.iml" filepath="$PROJECT_DIR$/UnixCombine/UnixCombine.iml" />
     </modules>
   </component>
 </project>
