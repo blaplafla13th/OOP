@@ -16,7 +16,7 @@ public class Menu {
         System.out.println("7: LAB1");
         System.out.println("8: LAB2");
         System.out.println("0: Exit");
-        switch (input()) {
+        switch (input(8)) {
             case 1:
                 runHW1();
                 break;
@@ -73,7 +73,7 @@ public class Menu {
         System.out.println("21: TimeTable");
         System.out.println("22: TriangularPattern");
         System.out.println("0: Back");
-        int i = input();
+        int i = input(22);
         System.out.println("Function Run: ");
         switch (i) {
             case 1:
@@ -176,7 +176,7 @@ public class Menu {
         System.out.println("22: TrigonometricSeries");
         System.out.println("23: WordGuess");
         System.out.println("0: Back");
-        int i = input();
+        int i = input(23);
         System.out.println("Function Run: ");
         switch (i) {
             case 1:
@@ -275,7 +275,7 @@ public class Menu {
         System.out.println("15: mypoint MyRectangleTest");
         System.out.println("16: mypoint MyTriangleTest");
         System.out.println("0: Back");
-        int i = input();
+        int i = input(16);
         System.out.println("Function Run: ");
         switch (i) {
             case 1:
@@ -344,7 +344,7 @@ public class Menu {
         System.out.println("6: polynomial MyPolynomialTest");
         System.out.println("7: time TestMyTime");
         System.out.println("0: Back");
-        int i = input();
+        int i = input(7);
         System.out.println("Function Run: ");
         switch (i) {
             case 1:
@@ -391,7 +391,7 @@ public class Menu {
         System.out.println("11: point TestLineSub");
         System.out.println("12: point TestPoint");
         System.out.println("0: Back");
-        int i = input();
+        int i = input(12);
         System.out.println("Function Run: ");
         switch (i) {
             case 1:
@@ -449,7 +449,7 @@ public class Menu {
         System.out.println("7: resizable TestResizableCircle");
         System.out.println("8: shape TestMain");
         System.out.println("0: Back");
-        int i = input();
+        int i = input(8);
         System.out.println("Function Run: ");
         switch (i) {
             case 1:
@@ -515,7 +515,7 @@ public class Menu {
         System.out.println("27: SumProductMinMax5");
         System.out.println("28: Tribonacci");
         System.out.println("0: Back");
-        int i = input();
+        int i = input(28);
         System.out.println("Function Run: ");
         switch (i) {
             case 1:
@@ -630,7 +630,7 @@ public class Menu {
         System.out.println("16: Search");
         System.out.println("17: Swap");
         System.out.println("0: Back");
-        int i = input();
+        int i = input(17);
         System.out.println("Function Run: ");
         switch (i) {
             case 1:
@@ -692,15 +692,17 @@ public class Menu {
         }
     }
 
-    public static int input() {
+    public static int input(int maxNumber) {
         int i;
         try {
             i = Integer.parseInt(input.nextLine());
-        } catch (NumberFormatException e) {
-            {
+            if (i > maxNumber) {
                 System.out.println("Không tìm thấy lựa chọn");
                 return -1;
             }
+        } catch (NumberFormatException e) {
+            System.out.println("Không tìm thấy lựa chọn");
+            return -1;
         }
         return i;
     }

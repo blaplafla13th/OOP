@@ -1,12 +1,13 @@
 # cd to OOP project folder
-file="./UnixCombine/src/Menu.java"
+file="./Menu/src/Menu.java"
 # find ./ -name "*.java" | sed 's/.*src\///g' | sed 's/\//./g' --> list all java file with java package format
 
 echo >$file
 
 #start main
 echo -e "import java.util.Scanner;
-public class Combine {
+
+public class Menu {
 public static Scanner input = new Scanner(System.in);
 public static String[] arrayTest = {\"Test\"};
 public static void main(String[] args){" >>$file
@@ -25,12 +26,14 @@ echo "System.out.println(\"0: Exit\");" >>$file
 #end print case
 
 #start switch folder
-echo "switch (input()) {" >>$file
+echo "switch (input(${#listFolder[@]})) {" >>$file
 for ((i = 0; i < ${#listFolder[@]}; i++)); do
-  echo "case $((i+1)): run${listFolder[i]}(); break;" >>$file
+  echo "case $((i+1)):run${listFolder[i]}();break;" >>$file
 done
-echo "case 0: break;">>$file
-echo "default: main(arrayTest);">>$file
+echo "case 0:
+break;">>$file
+echo "default:
+main(arrayTest);">>$file
 echo "}" >>$file
 #end switch folder
 echo "}" >>$file
@@ -52,14 +55,14 @@ for i in "${listFolder[@]}"; do
   #end print case
 
   #print switch case
-  echo "int i = input();" >> $file
+  echo "int i = input(${#listMain[@]});" >> $file
   echo "System.out.println(\"Function Run: \");" >>$file
   echo "switch (i) {" >>$file
   for ((j = 0; j < ${#listMain[@]}; j++)); do
-    echo "case $((j+1)): ${listMain[j]}.main(arrayTest);break;">>$file
+    echo "case $((j+1)):${listMain[j]}.main(arrayTest);break;">>$file
   done
-  echo "case 0: main(arrayTest);break;">>$file
-  echo "default: run$i();">>$file
+  echo "case 0:main(arrayTest);break;">>$file
+  echo "default:run$i();">>$file
   echo "}" >>$file
   #end print switch case
   echo "}" >>$file
@@ -67,13 +70,17 @@ done
 
 #end mini func
 #start input func
-echo -e "public static int input() {
+echo -e "public static int input(int maxNumber) {
 int i;
 try {
 i = Integer.parseInt(input.nextLine());
+if (i>maxNumber){
+System.out.println(\"Không tìm thấy lựa chọn\");
+return -1;
+}
 } catch (NumberFormatException e) {
-{System.out.println(\"Không tìm thấy lựa chọn\");
-return -1;}
+System.out.println(\"Không tìm thấy lựa chọn\");
+return -1;
 }
 return i;
 }
