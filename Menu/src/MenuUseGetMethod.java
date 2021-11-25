@@ -1,8 +1,6 @@
 import java.io.File;
 import java.io.FileFilter;
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -14,42 +12,38 @@ public class MenuUseGetMethod {
         FileFilter getJavaFolder = file -> file.getAbsolutePath().contains("OOP_");
         FileFilter getJavaTest = file -> file.getAbsolutePath().contains("Test");
 
-        ArrayList<File> listModule = new ArrayList<>
-                (Arrays.stream(current.listFiles(getJavaFolder)).toList());
+        File[] listModule = current.listFiles(getJavaFolder);
         int level1 = printMenu(listModule);
-        String modulePath = listModule.get(level1).getPath() + File.separator + "src" + File.separator;
+        String modulePath = listModule[level1].getPath() + File.separator + "src" + File.separator;
 
         File PackageFatherPath = new File(modulePath
-                + listModule.get(level1).getName().replace("OOP_", "").toLowerCase());
-        ArrayList<File> listFolderPackage = new ArrayList<>
-                (Arrays.stream(PackageFatherPath.listFiles()).toList());
+                + listModule[level1].getName().replace("OOP_", "").toLowerCase());
+        File[] listFolderPackage = PackageFatherPath.listFiles();
         int level2 = printMenu(listFolderPackage);
 
-        File subPackagePath = new File(listFolderPackage.get(level2).getPath());
+        File subPackagePath = new File(listFolderPackage[level2].getPath());
         if (subPackagePath.isFile()) {
             classPath = subPackagePath.getPath().replace(modulePath, "")
                     .replace(File.separator, ".").replace(".java", "");
 
         } else {
             File packageSubPath = new File(PackageFatherPath.getPath() + File.separator
-                    + listFolderPackage.get(level2).getName());
-            ArrayList<File> listSubPackage = new ArrayList<>
-                    (Arrays.stream(packageSubPath.listFiles()).toList());
+                    + listFolderPackage[level2].getName());
+            File[] listSubPackage = packageSubPath.listFiles();
             int level3 = printMenu(listSubPackage);
 
-            if (listSubPackage.get(level3).isFile()) {
-                classPath = listSubPackage.get(level3).getPath().replace(modulePath, "")
+            if (listSubPackage[level3].isFile()) {
+                classPath = listSubPackage[level3].getPath().replace(modulePath, "")
                         .replace(File.separator, ".").replace(".java", "");
 
             } else {
                 File packageChildPath = new File(packageSubPath.getPath() + File.separator
-                        + listSubPackage.get(level3).getName());
-                ArrayList<File> listChildPackage = new ArrayList<>
-                        (Arrays.stream(packageChildPath.listFiles(getJavaTest)).toList());
+                        + listSubPackage[level3].getName());
+                File[] listChildPackage = packageChildPath.listFiles(getJavaTest);
                 int level4 = printMenu(listChildPackage);
 
                 File packageTestPath = new File(packageChildPath.getPath() + File.separator
-                        + listChildPackage.get(level4).getName());
+                        + listChildPackage[level4].getName());
                 classPath = packageTestPath.getPath().replace(modulePath, "")
                         .replace(File.separator, ".").replace(".java", "");
             }
@@ -57,18 +51,18 @@ public class MenuUseGetMethod {
         runClass(classPath);
     }
 
-    public static int printMenu(ArrayList<File> list) {
-        for (int i = 0; i < list.size(); i++) {
-            System.out.printf("%d) %s\n", (i + 1), list.get(i).getName().replace(".java", "")
+    public static int printMenu(File[] list) {
+        for (int i = 0; i < list.length; i++) {
+            System.out.printf("%d) %s\n", (i + 1), list[i].getName().replace(".java", "")
                     .replace("OOP_", ""));
         }
         System.out.println("0) Exit");
         System.out.print("Nhập lựa chọn của bạn:");
-        int option = input(list.size()) - 1;
+        int option = input(list.length) - 1;
         if (option == -1) {
             System.out.println("Bye!");
             System.exit(0);
-        } else if (option > list.size()) {
+        } else if (option > list.length) {
             return printMenu(list);
         }
         return option;
@@ -102,8 +96,10 @@ public class MenuUseGetMethod {
             }
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
             System.out.println("Not runnable file. Return to main menu.");
+            System.exit(2);
         }
         System.out.println();
         System.out.println("Done");
+        System.exit(1);
     }
 }
