@@ -3,7 +3,6 @@ import java.io.FileFilter;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Scanner;
 
-
 public class MenuUseGetMethod {
 
     public static void main(String[] args) {
@@ -56,6 +55,7 @@ public class MenuUseGetMethod {
             System.out.println("Không tìm thấy đối tượng");
             System.exit(2);
         }
+        System.out.println("______Menu______");
         for (int i = 0; i < list.length; i++) {
             System.out.printf("%d) %s\n", (i + 1), list[i].getName().replace(".java", "")
                     .replace("OOP_", ""));
@@ -63,6 +63,7 @@ public class MenuUseGetMethod {
         System.out.println("0) Exit");
         System.out.print("Nhập lựa chọn của bạn:");
         int option = input(list.length) - 1;
+        System.out.println("____________");
         if (option == -1) {
             System.out.println("Bye!");
             System.exit(0);
@@ -99,8 +100,8 @@ public class MenuUseGetMethod {
                 inputClass.getMethod("main", String[].class).invoke(obj, (Object) null);
             }
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
-            System.out.println("Not runnable file. Return to main menu.");
-            System.exit(2);
+            System.out.println("Class không chạy được");
+            System.exit(3);
         }
         System.out.println();
         System.out.println("Done");
