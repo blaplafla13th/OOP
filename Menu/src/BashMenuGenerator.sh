@@ -74,7 +74,7 @@ echo -e "public static int input(int maxNumber) {
 int i;
 try {
 i = Integer.parseInt(input.nextLine());
-if (i>maxNumber){
+if (i>maxNumber && i<0){
 System.out.println(\"Không tìm thấy lựa chọn\");
 return -1;
 }
