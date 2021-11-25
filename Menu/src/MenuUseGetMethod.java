@@ -52,6 +52,10 @@ public class MenuUseGetMethod {
     }
 
     public static int printMenu(File[] list) {
+        if (list == null) {
+            System.out.println("Không tìm thấy đối tượng");
+            System.exit(2);
+        }
         for (int i = 0; i < list.length; i++) {
             System.out.printf("%d) %s\n", (i + 1), list[i].getName().replace(".java", "")
                     .replace("OOP_", ""));
