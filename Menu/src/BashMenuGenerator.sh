@@ -28,12 +28,10 @@ echo "System.out.println(\"0: Exit\");" >>$file
 #start switch folder
 echo "switch (input(${#listFolder[@]})) {" >>$file
 for ((i = 0; i < ${#listFolder[@]}; i++)); do
-  echo "case $((i+1)):run${listFolder[i]}();break;" >>$file
+  echo "case $((i+1)) -> run${listFolder[i]}();" >>$file
 done
-echo "case 0:
-break;">>$file
-echo "default:
-main(arrayTest);">>$file
+echo "case 0 -> {}">>$file
+echo "default -> main(arrayTest);">>$file
 echo "}" >>$file
 #end switch folder
 echo "}" >>$file
@@ -59,10 +57,10 @@ for i in "${listFolder[@]}"; do
   echo "System.out.println(\"Function Run: \");" >>$file
   echo "switch (i) {" >>$file
   for ((j = 0; j < ${#listMain[@]}; j++)); do
-    echo "case $((j+1)):${listMain[j]}.main(arrayTest);break;">>$file
+    echo "case $((j+1)) -> ${listMain[j]}.main(arrayTest);">>$file
   done
-  echo "case 0:main(arrayTest);break;">>$file
-  echo "default:run$i();">>$file
+  echo "case 0 -> main(arrayTest);">>$file
+  echo "default -> run$i();">>$file
   echo "}" >>$file
   #end print switch case
   echo "}" >>$file
@@ -74,7 +72,7 @@ echo -e "public static int input(int maxNumber) {
 int i;
 try {
 i = Integer.parseInt(input.nextLine());
-if (i>maxNumber && i<0){
+if (i>maxNumber || i<0){
 System.out.println(\"Không tìm thấy lựa chọn\");
 return -1;
 }
