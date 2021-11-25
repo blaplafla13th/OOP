@@ -6,17 +6,23 @@ public class Menu {
     public static String[] arrayTest = {"Test"};
 
     public static void main(String[] args) {
-        System.out.println("Nhập lựa chọn của bạn:");
-        System.out.println("1: HW1");
-        System.out.println("2: HW2");
-        System.out.println("3: HW3");
-        System.out.println("4: HW4");
-        System.out.println("5: HW5");
-        System.out.println("6: HW6");
-        System.out.println("7: LAB1");
-        System.out.println("8: LAB2");
-        System.out.println("0: Exit");
-        switch (input(8)) {
+        int i;
+        {
+            System.out.println("______Menu______");
+            System.out.println("1: HW1");
+            System.out.println("2: HW2");
+            System.out.println("3: HW3");
+            System.out.println("4: HW4");
+            System.out.println("5: HW5");
+            System.out.println("6: HW6");
+            System.out.println("7: LAB1");
+            System.out.println("8: LAB2");
+            System.out.println("0: Exit");
+            System.out.print("Nhập lựa chọn của bạn:");
+            i = input(8);
+            System.out.println("____________");
+        }
+        switch (i) {
             case 1 -> runHW1();
             case 2 -> runHW2();
             case 3 -> runHW3();
@@ -32,31 +38,36 @@ public class Menu {
     }
 
     public static void runHW1() {
-        System.out.println("Nhập lựa chọn của bạn:");
-        System.out.println("1: Bin2Dec");
-        System.out.println("2: BoxPattern");
-        System.out.println("3: CeasarCode");
-        System.out.println("4: CheckerPattern");
-        System.out.println("5: CheckHexStr");
-        System.out.println("6: CountVowelsDigits");
-        System.out.println("7: DecipherCeasarCode");
-        System.out.println("8: ExchangeCipher");
-        System.out.println("9: Factorial");
-        System.out.println("10: Hex2Dec");
-        System.out.println("11: HillPattern");
-        System.out.println("12: Oct2Dec");
-        System.out.println("13: PhoneKeyPadA");
-        System.out.println("14: PhoneKeyPadB");
-        System.out.println("15: RadixN2Dec");
-        System.out.println("16: RadixN2DecRewrite");
-        System.out.println("17: ReverseString");
-        System.out.println("18: SquarePattern");
-        System.out.println("19: SquarePattern1");
-        System.out.println("20: TestPalindromicPhrase");
-        System.out.println("21: TimeTable");
-        System.out.println("22: TriangularPattern");
-        System.out.println("0: Back");
-        int i = input(22);
+        int i;
+        {
+            System.out.println("______Menu______");
+            System.out.println("1: Bin2Dec");
+            System.out.println("2: BoxPattern");
+            System.out.println("3: CeasarCode");
+            System.out.println("4: CheckerPattern");
+            System.out.println("5: CheckHexStr");
+            System.out.println("6: CountVowelsDigits");
+            System.out.println("7: DecipherCeasarCode");
+            System.out.println("8: ExchangeCipher");
+            System.out.println("9: Factorial");
+            System.out.println("10: Hex2Dec");
+            System.out.println("11: HillPattern");
+            System.out.println("12: Oct2Dec");
+            System.out.println("13: PhoneKeyPadA");
+            System.out.println("14: PhoneKeyPadB");
+            System.out.println("15: RadixN2Dec");
+            System.out.println("16: RadixN2DecRewrite");
+            System.out.println("17: ReverseString");
+            System.out.println("18: SquarePattern");
+            System.out.println("19: SquarePattern1");
+            System.out.println("20: TestPalindromicPhrase");
+            System.out.println("21: TimeTable");
+            System.out.println("22: TriangularPattern");
+            System.out.println("0: Back");
+            System.out.println("Nhập lựa chọn của bạn:");
+            i = input(22);
+            System.out.println("____________");
+        }
         System.out.println("Function Run: ");
         switch (i) {
             case 1 -> hw1.Bin2Dec.main(arrayTest);
@@ -87,32 +98,37 @@ public class Menu {
     }
 
     public static void runHW2() {
-        System.out.println("Nhập lựa chọn của bạn:");
-        System.out.println("1: BubbleSort");
-        System.out.println("2: DateUtil");
-        System.out.println("3: FactorialHandlingOverflow");
-        System.out.println("4: FactorialRecursion");
-        System.out.println("5: FibonacciIntHandlingOverflow");
-        System.out.println("6: FibonacciRecursive");
-        System.out.println("7: GCD");
-        System.out.println("8: GCDRecursive");
-        System.out.println("9: InsertionSort");
-        System.out.println("10: LengthOfARunningNumberSequenceRecursive");
-        System.out.println("11: LinearSearch");
-        System.out.println("12: Matrix");
-        System.out.println("13: NumberConversion");
-        System.out.println("14: NumberGuest");
-        System.out.println("15: PerfectNumberList");
-        System.out.println("16: PerfectPrimeFactorList");
-        System.out.println("17: PrimeList");
-        System.out.println("18: RecursiveBinarySearch");
-        System.out.println("19: SelectionSort");
-        System.out.println("20: SpecialSeries");
-        System.out.println("21: TribonacciIntHandlingOverflow");
-        System.out.println("22: TrigonometricSeries");
-        System.out.println("23: WordGuess");
-        System.out.println("0: Back");
-        int i = input(23);
+        int i;
+        {
+            System.out.println("______Menu______");
+            System.out.println("1: BubbleSort");
+            System.out.println("2: DateUtil");
+            System.out.println("3: FactorialHandlingOverflow");
+            System.out.println("4: FactorialRecursion");
+            System.out.println("5: FibonacciIntHandlingOverflow");
+            System.out.println("6: FibonacciRecursive");
+            System.out.println("7: GCD");
+            System.out.println("8: GCDRecursive");
+            System.out.println("9: InsertionSort");
+            System.out.println("10: LengthOfARunningNumberSequenceRecursive");
+            System.out.println("11: LinearSearch");
+            System.out.println("12: Matrix");
+            System.out.println("13: NumberConversion");
+            System.out.println("14: NumberGuest");
+            System.out.println("15: PerfectNumberList");
+            System.out.println("16: PerfectPrimeFactorList");
+            System.out.println("17: PrimeList");
+            System.out.println("18: RecursiveBinarySearch");
+            System.out.println("19: SelectionSort");
+            System.out.println("20: SpecialSeries");
+            System.out.println("21: TribonacciIntHandlingOverflow");
+            System.out.println("22: TrigonometricSeries");
+            System.out.println("23: WordGuess");
+            System.out.println("0: Back");
+            System.out.println("Nhập lựa chọn của bạn:");
+            i = input(23);
+            System.out.println("____________");
+        }
         System.out.println("Function Run: ");
         switch (i) {
             case 1 -> hw2.BubbleSort.main(arrayTest);
@@ -144,25 +160,30 @@ public class Menu {
     }
 
     public static void runHW3() {
-        System.out.println("Nhập lựa chọn của bạn:");
-        System.out.println("1: account TestMain");
-        System.out.println("2: ball TestMain");
-        System.out.println("3: circle1 TestCircle");
-        System.out.println("4: circle2 TestMain");
-        System.out.println("5: date TestMain");
-        System.out.println("6: employee TestMain");
-        System.out.println("7: invoiceitem TestMain");
-        System.out.println("8: rectangle TestMain");
-        System.out.println("9: time TestMain");
-        System.out.println("10: account TestMain");
-        System.out.println("11: invoice TestMain");
-        System.out.println("12: mypoint MyCircleTest");
-        System.out.println("13: mypoint MyLineTest");
-        System.out.println("14: mypoint MyPointTest");
-        System.out.println("15: mypoint MyRectangleTest");
-        System.out.println("16: mypoint MyTriangleTest");
-        System.out.println("0: Back");
-        int i = input(16);
+        int i;
+        {
+            System.out.println("______Menu______");
+            System.out.println("1: account TestMain");
+            System.out.println("2: ball TestMain");
+            System.out.println("3: circle1 TestCircle");
+            System.out.println("4: circle2 TestMain");
+            System.out.println("5: date TestMain");
+            System.out.println("6: employee TestMain");
+            System.out.println("7: invoiceitem TestMain");
+            System.out.println("8: rectangle TestMain");
+            System.out.println("9: time TestMain");
+            System.out.println("10: account TestMain");
+            System.out.println("11: invoice TestMain");
+            System.out.println("12: mypoint MyCircleTest");
+            System.out.println("13: mypoint MyLineTest");
+            System.out.println("14: mypoint MyPointTest");
+            System.out.println("15: mypoint MyRectangleTest");
+            System.out.println("16: mypoint MyTriangleTest");
+            System.out.println("0: Back");
+            System.out.println("Nhập lựa chọn của bạn:");
+            i = input(16);
+            System.out.println("____________");
+        }
         System.out.println("Function Run: ");
         switch (i) {
             case 1 -> hw3.part1.account.TestMain.main(arrayTest);
@@ -187,16 +208,21 @@ public class Menu {
     }
 
     public static void runHW4() {
-        System.out.println("Nhập lựa chọn của bạn:");
-        System.out.println("1: ball_player TestBall");
-        System.out.println("2: ball_player TestPlayer");
-        System.out.println("3: bouncing_ball TestBouncingBall");
-        System.out.println("4: complex MyComplexTest");
-        System.out.println("5: date MyDateTest");
-        System.out.println("6: polynomial MyPolynomialTest");
-        System.out.println("7: time TestMyTime");
-        System.out.println("0: Back");
-        int i = input(7);
+        int i;
+        {
+            System.out.println("______Menu______");
+            System.out.println("1: ball_player TestBall");
+            System.out.println("2: ball_player TestPlayer");
+            System.out.println("3: bouncing_ball TestBouncingBall");
+            System.out.println("4: complex MyComplexTest");
+            System.out.println("5: date MyDateTest");
+            System.out.println("6: polynomial MyPolynomialTest");
+            System.out.println("7: time TestMyTime");
+            System.out.println("0: Back");
+            System.out.println("Nhập lựa chọn của bạn:");
+            i = input(7);
+            System.out.println("____________");
+        }
         System.out.println("Function Run: ");
         switch (i) {
             case 1 -> hw4.part1.ball_player.TestBall.main(arrayTest);
@@ -212,21 +238,26 @@ public class Menu {
     }
 
     public static void runHW5() {
-        System.out.println("Nhập lựa chọn của bạn:");
-        System.out.println("1: animal TestMain");
-        System.out.println("2: circle TestCylinder");
-        System.out.println("3: people TestPerson");
-        System.out.println("4: point TestPoint");
-        System.out.println("5: shape CircleTest");
-        System.out.println("6: shape RectangleTest");
-        System.out.println("7: shape ShapeTest");
-        System.out.println("8: shape SquareTest");
-        System.out.println("9: circle CylinderTest");
-        System.out.println("10: point TestLine");
-        System.out.println("11: point TestLineSub");
-        System.out.println("12: point TestPoint");
-        System.out.println("0: Back");
-        int i = input(12);
+        int i;
+        {
+            System.out.println("______Menu______");
+            System.out.println("1: animal TestMain");
+            System.out.println("2: circle TestCylinder");
+            System.out.println("3: people TestPerson");
+            System.out.println("4: point TestPoint");
+            System.out.println("5: shape CircleTest");
+            System.out.println("6: shape RectangleTest");
+            System.out.println("7: shape ShapeTest");
+            System.out.println("8: shape SquareTest");
+            System.out.println("9: circle CylinderTest");
+            System.out.println("10: point TestLine");
+            System.out.println("11: point TestLineSub");
+            System.out.println("12: point TestPoint");
+            System.out.println("0: Back");
+            System.out.println("Nhập lựa chọn của bạn:");
+            i = input(12);
+            System.out.println("____________");
+        }
         System.out.println("Function Run: ");
         switch (i) {
             case 1 -> hw5.part1.animal.TestMain.main(arrayTest);
@@ -247,17 +278,22 @@ public class Menu {
     }
 
     public static void runHW6() {
-        System.out.println("Nhập lựa chọn của bạn:");
-        System.out.println("1: animal TestAnimal");
-        System.out.println("2: geometricobject TestMain");
-        System.out.println("3: movable TestMovableCircle");
-        System.out.println("4: movable TestMovablePoint");
-        System.out.println("5: movable TestMovableRectangle");
-        System.out.println("6: resizable TestCircle");
-        System.out.println("7: resizable TestResizableCircle");
-        System.out.println("8: shape TestMain");
-        System.out.println("0: Back");
-        int i = input(8);
+        int i;
+        {
+            System.out.println("______Menu______");
+            System.out.println("1: animal TestAnimal");
+            System.out.println("2: geometricobject TestMain");
+            System.out.println("3: movable TestMovableCircle");
+            System.out.println("4: movable TestMovablePoint");
+            System.out.println("5: movable TestMovableRectangle");
+            System.out.println("6: resizable TestCircle");
+            System.out.println("7: resizable TestResizableCircle");
+            System.out.println("8: shape TestMain");
+            System.out.println("0: Back");
+            System.out.println("Nhập lựa chọn của bạn:");
+            i = input(8);
+            System.out.println("____________");
+        }
         System.out.println("Function Run: ");
         switch (i) {
             case 1 -> hw6.part1.animal.TestAnimal.main(arrayTest);
@@ -274,37 +310,42 @@ public class Menu {
     }
 
     public static void runLAB1() {
-        System.out.println("Nhập lựa chọn của bạn:");
-        System.out.println("1: AverageWithInputValidation");
-        System.out.println("2: CheckOddEven");
-        System.out.println("3: CheckPassFail");
-        System.out.println("4: CircleComputation");
-        System.out.println("5: ComputePI12");
-        System.out.println("6: ComputerPI");
-        System.out.println("7: CylinderComputation");
-        System.out.println("8: ExtractDigits");
-        System.out.println("9: Fibonacci");
-        System.out.println("10: HarmonicSum");
-        System.out.println("11: InputValidation");
-        System.out.println("12: PensionContributionCalculator");
-        System.out.println("13: PensionContributionCalculatorWithSentinel");
-        System.out.println("14: PrintDayInWordA");
-        System.out.println("15: PrintDayInWordB");
-        System.out.println("16: PrintNumberInWordA");
-        System.out.println("17: PrintNumberInWordB");
-        System.out.println("18: ReverseInt");
-        System.out.println("19: SphereComputation");
-        System.out.println("20: SumAverageRunningInt");
-        System.out.println("21: SumAverageRunningInt1");
-        System.out.println("22: SumAverageRunningInt2");
-        System.out.println("23: SumAverageRunningInt4");
-        System.out.println("24: SumAverageRunningInt5");
-        System.out.println("25: SumAverageRunningInt6");
-        System.out.println("26: SumProductMinMax3");
-        System.out.println("27: SumProductMinMax5");
-        System.out.println("28: Tribonacci");
-        System.out.println("0: Back");
-        int i = input(28);
+        int i;
+        {
+            System.out.println("______Menu______");
+            System.out.println("1: AverageWithInputValidation");
+            System.out.println("2: CheckOddEven");
+            System.out.println("3: CheckPassFail");
+            System.out.println("4: CircleComputation");
+            System.out.println("5: ComputePI12");
+            System.out.println("6: ComputerPI");
+            System.out.println("7: CylinderComputation");
+            System.out.println("8: ExtractDigits");
+            System.out.println("9: Fibonacci");
+            System.out.println("10: HarmonicSum");
+            System.out.println("11: InputValidation");
+            System.out.println("12: PensionContributionCalculator");
+            System.out.println("13: PensionContributionCalculatorWithSentinel");
+            System.out.println("14: PrintDayInWordA");
+            System.out.println("15: PrintDayInWordB");
+            System.out.println("16: PrintNumberInWordA");
+            System.out.println("17: PrintNumberInWordB");
+            System.out.println("18: ReverseInt");
+            System.out.println("19: SphereComputation");
+            System.out.println("20: SumAverageRunningInt");
+            System.out.println("21: SumAverageRunningInt1");
+            System.out.println("22: SumAverageRunningInt2");
+            System.out.println("23: SumAverageRunningInt4");
+            System.out.println("24: SumAverageRunningInt5");
+            System.out.println("25: SumAverageRunningInt6");
+            System.out.println("26: SumProductMinMax3");
+            System.out.println("27: SumProductMinMax5");
+            System.out.println("28: Tribonacci");
+            System.out.println("0: Back");
+            System.out.println("Nhập lựa chọn của bạn:");
+            i = input(28);
+            System.out.println("____________");
+        }
         System.out.println("Function Run: ");
         switch (i) {
             case 1 -> lab1.AverageWithInputValidation.main(arrayTest);
@@ -341,26 +382,31 @@ public class Menu {
     }
 
     public static void runLAB2() {
-        System.out.println("Nhập lựa chọn của bạn:");
-        System.out.println("1: ArrayToString");
-        System.out.println("2: Contains");
-        System.out.println("3: CopyOf");
-        System.out.println("4: Dec2Hex");
-        System.out.println("5: Equals");
-        System.out.println("6: Exponent");
-        System.out.println("7: GradesHistogram");
-        System.out.println("8: GradesStatistics1_3");
-        System.out.println("9: GradesStatistics2_11");
-        System.out.println("10: Hex2Bin");
-        System.out.println("11: MagicSum");
-        System.out.println("12: Print");
-        System.out.println("13: PrintArray");
-        System.out.println("14: PrintArrayInStars");
-        System.out.println("15: Reverse");
-        System.out.println("16: Search");
-        System.out.println("17: Swap");
-        System.out.println("0: Back");
-        int i = input(17);
+        int i;
+        {
+            System.out.println("______Menu______");
+            System.out.println("1: ArrayToString");
+            System.out.println("2: Contains");
+            System.out.println("3: CopyOf");
+            System.out.println("4: Dec2Hex");
+            System.out.println("5: Equals");
+            System.out.println("6: Exponent");
+            System.out.println("7: GradesHistogram");
+            System.out.println("8: GradesStatistics1_3");
+            System.out.println("9: GradesStatistics2_11");
+            System.out.println("10: Hex2Bin");
+            System.out.println("11: MagicSum");
+            System.out.println("12: Print");
+            System.out.println("13: PrintArray");
+            System.out.println("14: PrintArrayInStars");
+            System.out.println("15: Reverse");
+            System.out.println("16: Search");
+            System.out.println("17: Swap");
+            System.out.println("0: Back");
+            System.out.println("Nhập lựa chọn của bạn:");
+            i = input(17);
+            System.out.println("____________");
+        }
         System.out.println("Function Run: ");
         switch (i) {
             case 1 -> lab2.ArrayToString.main(arrayTest);

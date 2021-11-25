@@ -13,7 +13,8 @@ public static String[] arrayTest = {\"Test\"};
 public static void main(String[] args){" >>$file
 
 #print case
-echo "System.out.println(\"Nhập lựa chọn của bạn:\");" >>$file
+echo "int i;" >> $file
+echo "{System.out.println(\"______Menu______\");" >>$file
 listFolder=()
 i=1
 for folder in OOP_*; do
@@ -23,10 +24,13 @@ for folder in OOP_*; do
   i=$((i+1))
 done
 echo "System.out.println(\"0: Exit\");" >>$file
+echo "System.out.print(\"Nhập lựa chọn của bạn:\");" >>$file
+echo "i = input(${#listFolder[@]});" >> $file
+echo "System.out.println(\"____________\");}" >>$file
 #end print case
 
 #start switch folder
-echo "switch (input(${#listFolder[@]})) {" >>$file
+echo "switch (i) {" >>$file
 for ((i = 0; i < ${#listFolder[@]}; i++)); do
   echo "case $((i+1)) -> run${listFolder[i]}();" >>$file
 done
@@ -44,16 +48,19 @@ for i in "${listFolder[@]}"; do
   listMain=($(find ./OOP_$i -name "*.java" | sed 's/.*src\///g' | sed 's/\//./g' | sed 's/.java//g' |
   awk -F"." '{if (index($2,"part")==0) {print $0} else if (index($4,"Test")!=0) {print $0}}'))
   #print case
-  echo "System.out.println(\"Nhập lựa chọn của bạn:\");" >>$file
+  echo "int i;" >> $file
+  echo "{System.out.println(\"______Menu______\");" >>$file
   for ((j = 0; j < ${#listMain[@]}; j++)); do
     temp=`echo ${listMain[j]} | awk -F"." '{if (index($2,"part")==0) {print $2} else if (index($4,"Test")!=0) {print ($3,$4)}}'`
     echo "System.out.println(\"$((j+1)): $temp\");" >> $file
   done
   echo "System.out.println(\"0: Back\");" >> $file
+  echo "System.out.print(\"Nhập lựa chọn của bạn:\");" >>$file
+  echo "i = input(${#listMain[@]});" >> $file
+  echo "System.out.println(\"____________\");}" >>$file
   #end print case
 
   #print switch case
-  echo "int i = input(${#listMain[@]});" >> $file
   echo "System.out.println(\"Function Run: \");" >>$file
   echo "switch (i) {" >>$file
   for ((j = 0; j < ${#listMain[@]}; j++)); do
