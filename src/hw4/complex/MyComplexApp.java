@@ -1,4 +1,4 @@
-package hw4.part1.complex;
+package hw4.complex;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class MyComplexApp {
         double a;
         double b;
         for (int i = 1; i < 3; i++) {
-            System.out.printf("Enter complex number %d (real and imaginary part): ", i);
+            System.out.printf("Enter hw4.complex number %d (real and imaginary part): ", i);
             a = input.nextDouble();
             b = input.nextDouble();
             complexes[i - 1] = new MyComplex(a, b);

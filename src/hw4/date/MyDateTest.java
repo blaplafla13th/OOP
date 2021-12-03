@@ -1,4 +1,4 @@
-package hw4.part1.date;
+package hw4.date;
 
 public class MyDateTest {
     public static void main(String[] args) {
@@ -30,7 +30,7 @@ public class MyDateTest {
             MyDate testError = new MyDate(25,61,61);
         }
         catch (IllegalArgumentException e) {
-            System.out.println("Illegal date");
+            System.out.println("Illegal hw4.date");
         }
     }
 }

@@ -1,4 +1,4 @@
-package hw4.part1.date;
+package hw4.date;
 
 public class MyDate {
     private int day;

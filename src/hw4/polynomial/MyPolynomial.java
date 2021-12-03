@@ -1,4 +1,4 @@
-package hw4.part1.polynomial;
+package hw4.polynomial;
 
 public class MyPolynomial {
     private double[] coeffs;

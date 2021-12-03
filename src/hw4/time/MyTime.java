@@ -1,4 +1,4 @@
-package hw4.part1.time;
+package hw4.time;
 
 public class MyTime {
     private int hour;
@@ -6,7 +6,7 @@ public class MyTime {
     private int second;
 
     public MyTime(int hour, int minute, int second) {
-        if (!check(hour,minute,second)) throw new IllegalArgumentException("Wrong time");
+        if (!check(hour,minute,second)) throw new IllegalArgumentException("Wrong hw4.time");
         this.hour = hour;
         this.minute = minute;
         this.second = second;
@@ -40,7 +40,7 @@ public class MyTime {
     }
 
     public void setTime(int hour, int minute, int second) {
-        if (!check(hour,minute,second)) throw new IllegalArgumentException("Wrong time");
+        if (!check(hour,minute,second)) throw new IllegalArgumentException("Wrong hw4.time");
         this.hour = hour;
         this.minute = minute;
         this.second = second;

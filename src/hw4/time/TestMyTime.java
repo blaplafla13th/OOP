@@ -1,4 +1,4 @@
-package hw4.part1.time;
+package hw4.time;
 
 public class TestMyTime {
     public static void main(String[] args) {
@@ -37,7 +37,7 @@ public class TestMyTime {
             MyTime testError = new MyTime(25,61,61);
         }
         catch (IllegalArgumentException e) {
-            System.out.println("Illegal time");
+            System.out.println("Illegal hw4.time");
         }
     }
 }
