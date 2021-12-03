@@ -1,11 +1,17 @@
+# !FOR BASH ONLY
 # cd to OOP project folder
-file="./Menu/src/Menu.java"
-# find ./ -name "*.java" | sed 's/.*src\///g' | sed 's/\//./g' --> list all java file with java package format
+#run command: bash ./src/menu/BashMenuGenerator.sh and reformat Menu.java
 
+# find ./ -name "*.java" | sed 's/\.\///g' | sed 's/\//./g' --> list all java file with java package format
+cd src
+file="./menu/Menu.java"
 echo >$file
 
 #start main
-echo -e "import java.util.Scanner;
+echo -e "
+package menu;
+
+import java.util.Scanner;
 
 public class Menu {
 public static Scanner input = new Scanner(System.in);
@@ -17,8 +23,8 @@ echo "int i;" >> $file
 echo "{System.out.println(\"______Menu______\");" >>$file
 listFolder=()
 i=1
-for folder in OOP_*; do
-  temp=$(echo $folder | sed 's/OOP_//g')
+for folder in lab* hw*; do
+  temp=$(echo $folder)
   echo "System.out.println(\"$i: $temp\");" >>$file
   listFolder+=($temp)
   i=$((i+1))
@@ -45,13 +51,13 @@ echo "}" >>$file
 
 for i in "${listFolder[@]}"; do
   echo "public static void run$i(){" >>$file
-  listMain=($(find ./OOP_$i -name "*.java" | sed 's/.*src\///g' | sed 's/\//./g' | sed 's/.java//g' |
-  awk -F"." '{if (index($2,"part")==0) {print $0} else if (index($4,"Test")!=0) {print $0}}'))
+  listMain=($(find ./$i -name "*.java" | grep -v "menu" | sed 's/\.\///g' | sed 's/\//./g' | sed 's/.java//g' |
+  awk -F"." '{if (NF<=2) {print $0} else if (index($0,"Test")!=0 || index($0,"App")!=0) {print $0}}'))
   #print case
   echo "int i;" >> $file
   echo "{System.out.println(\"______Menu______\");" >>$file
   for ((j = 0; j < ${#listMain[@]}; j++)); do
-    temp=`echo ${listMain[j]} | awk -F"." '{if (index($2,"part")==0) {print $2} else if (index($4,"Test")!=0) {print ($3,$4)}}'`
+    temp=`echo ${listMain[j]}`
     echo "System.out.println(\"$((j+1)): $temp\");" >> $file
   done
   echo "System.out.println(\"0: Back\");" >> $file
