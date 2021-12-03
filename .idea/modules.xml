@@ -4,16 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Menu/Menu.iml" filepath="$PROJECT_DIR$/Menu/Menu.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/OOP.iml" filepath="$PROJECT_DIR$/.idea/OOP.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OOP_HW1/OOP_HW1.iml" filepath="$PROJECT_DIR$/OOP_HW1/OOP_HW1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OOP_HW2/OOP_HW2.iml" filepath="$PROJECT_DIR$/OOP_HW2/OOP_HW2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OOP_HW3/OOP_HW3.iml" filepath="$PROJECT_DIR$/OOP_HW3/OOP_HW3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OOP_HW4/OOP_HW4.iml" filepath="$PROJECT_DIR$/OOP_HW4/OOP_HW4.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OOP_HW5/OOP_HW5.iml" filepath="$PROJECT_DIR$/OOP_HW5/OOP_HW5.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OOP_HW6/OOP_HW6.iml" filepath="$PROJECT_DIR$/OOP_HW6/OOP_HW6.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OOP_LAB1/OOP_LAB1.iml" filepath="$PROJECT_DIR$/OOP_LAB1/OOP_LAB1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OOP_LAB2/OOP_LAB2.iml" filepath="$PROJECT_DIR$/OOP_LAB2/OOP_LAB2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OOP_LAB5/OOP_LAB5.iml" filepath="$PROJECT_DIR$/OOP_LAB5/OOP_LAB5.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OOP_LAB6/OOP_LAB6.iml" filepath="$PROJECT_DIR$/OOP_LAB6/OOP_LAB6.iml" />
     </modules>
   </component>
 </project>

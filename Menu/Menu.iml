@@ -7,13 +7,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="OOP_HW1" />
-    <orderEntry type="module" module-name="OOP_HW2" />
-    <orderEntry type="module" module-name="OOP_HW3" />
-    <orderEntry type="module" module-name="OOP_HW4" />
-    <orderEntry type="module" module-name="OOP_HW5" />
-    <orderEntry type="module" module-name="OOP_LAB1" />
-    <orderEntry type="module" module-name="OOP_LAB2" />
-    <orderEntry type="module" module-name="OOP_HW6" />
   </component>
 </module>
