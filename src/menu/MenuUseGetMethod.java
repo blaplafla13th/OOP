@@ -9,50 +9,25 @@ public class MenuUseGetMethod {
 
     public static void main(String[] args) {
         String classPath;
-        File current = new File(".");
-        FileFilter getJavaFolder = file -> file.getAbsolutePath().contains("OOP_");
-        FileFilter getJavaTest = file -> file.getAbsolutePath().contains("Test");
+        String packagePath = "." + File.separator + "src";
 
-        File[] listModule = current.listFiles(getJavaFolder);
-        int level1 = printMenu(listModule);
-        String modulePath = listModule[level1].getPath() + File.separator + "src" + File.separator;
+        FileFilter removeMenu = file -> !file.getName().equals("menu");
 
-        File PackageFatherPath = new File(modulePath
-                + listModule[level1].getName().replace("OOP_", "").toLowerCase());
-        File[] listFolderPackage = PackageFatherPath.listFiles();
-        int level2 = printMenu(listFolderPackage);
-
-        File subPackagePath = new File(listFolderPackage[level2].getPath());
-        if (subPackagePath.isFile()) {
-            classPath = subPackagePath.getPath().replace(modulePath, "")
-                    .replace(File.separator, ".").replace(".java", "");
-
-        } else {
-            File packageSubPath = new File(PackageFatherPath.getPath() + File.separator
-                    + listFolderPackage[level2].getName());
-            File[] listSubPackage = packageSubPath.listFiles();
-            int level3 = printMenu(listSubPackage);
-
-            if (listSubPackage[level3].isFile()) {
-                classPath = listSubPackage[level3].getPath().replace(modulePath, "")
-                        .replace(File.separator, ".").replace(".java", "");
-
-            } else {
-                File packageChildPath = new File(packageSubPath.getPath() + File.separator
-                        + listSubPackage[level3].getName());
-                File[] listChildPackage = packageChildPath.listFiles(getJavaTest);
-                int level4 = printMenu(listChildPackage);
-
-                File packageTestPath = new File(packageChildPath.getPath() + File.separator
-                        + listChildPackage[level4].getName());
-                classPath = packageTestPath.getPath().replace(modulePath, "")
-                        .replace(File.separator, ".").replace(".java", "");
-            }
+        File current = new File(packagePath);
+        while (!current.isFile()) {
+            File[] listPackage = current.listFiles(removeMenu);
+            int option = printMenu(listPackage);
+            current = new File(listPackage[option].getPath());
+            // FIXME: 03/12/2021 chua loc duoc cac file chay duoc va khong chay duoc
         }
+
+        classPath = current.getPath().replace(packagePath + File.separator, "")
+                .replace(File.separator, ".").replace(".java", "");
         runClass(classPath);
     }
 
     public static int printMenu(File[] list) {
+
         if (list == null) {
             System.out.println("Không tìm thấy đối tượng");
             System.exit(2);
@@ -98,7 +73,7 @@ public class MenuUseGetMethod {
             inputClass = Class.forName(packageName);
             Object obj = inputClass.getDeclaredConstructor().newInstance();
             if (inputClass.isInstance(obj)) {
-                System.out.println("Run:");
+                System.out.println("______Chạy______");
                 inputClass.getMethod("main", String[].class).invoke(obj, (Object) null);
             }
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
@@ -106,7 +81,7 @@ public class MenuUseGetMethod {
             System.exit(3);
         }
         System.out.println();
-        System.out.println("Done");
+        System.out.println("______Kết thúc______");
         System.exit(1);
     }
 }
