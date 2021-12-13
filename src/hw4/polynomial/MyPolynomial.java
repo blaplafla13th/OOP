@@ -12,14 +12,14 @@ public class MyPolynomial {
     }
 
     public String toString() {
-        String out = "" + coeffs[0];
+        StringBuilder out = new StringBuilder("" + coeffs[0]);
         for (int i = 1; i < coeffs.length; i++) {
             if (i == 1)
-                out = coeffs[i] + "x" + "+" + out;
+                out.insert(0, coeffs[i] + "x" + "+");
             else
-                out = coeffs[i] + "x^" + i + " + " + out;
+                out.insert(0, coeffs[i] + "x^" + i + " + ");
         }
-        return out;
+        return out.toString();
     }
 
     public double evaluate(double x) {

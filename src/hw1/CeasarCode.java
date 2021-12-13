@@ -7,7 +7,7 @@ public class CeasarCode {
         String inStr;
         int inStrLen;
         Scanner input = new Scanner(System.in);
-        String outStr="";
+        StringBuilder outStr= new StringBuilder();
         System.out.print("Enter a plain text String: ");
 
         inStr = input.next().toUpperCase();
@@ -17,7 +17,7 @@ public class CeasarCode {
         for (int charIdx = 0; charIdx < inStrLen; ++charIdx) {
             char temp = (char) (inStr.charAt(charIdx)+3);
             if ((int) temp>88) temp= (char) ( (int) temp -(int)'Z' +(int)'A');
-            outStr+=temp;
+            outStr.append(temp);
 
         }
         System.out.println("The ciphertext string is: "+outStr);

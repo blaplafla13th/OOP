@@ -10,10 +10,10 @@ public class ArrayToString {
     }
 
     public static String arrayToString(int[] array) {
-        String outStr = "";
+        StringBuilder outStr = new StringBuilder();
         for (int i = 0; i < array.length; i++) {
-            outStr += array[i];
+            outStr.append(array[i]);
         }
-        return outStr;
+        return outStr.toString();
     }
 }

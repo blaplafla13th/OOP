@@ -129,8 +129,6 @@ public class MyTime {
     }
 
     public boolean check(int hour, int minute, int second) {
-        if ((hour >= 24 && 0 < hour) || (minute >= 60 && minute < 0) || (second >= 60 && second < 0))
-            return false;
-        return true;
+        return (hour < 24 || 0 >= hour) && (minute < 60 || minute >= 0) && (second < 60 || second >= 0);
     }
 }

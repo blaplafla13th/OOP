@@ -1,7 +1,7 @@
 package hw6.geometricobject;
 
 interface GeometricObject {
-    public double getArea();
+    double getArea();
 
-    public double getPerimeter();
+    double getPerimeter();
 }

@@ -17,7 +17,7 @@ public class GradesHistogram {
             for (int i = 0; i < numStudents; ++i) {
                 System.out.printf("Enter the grade for students %d: ", (i + 1));
                 grades[i] = input.nextInt();
-                while (i > 100 && i < 0) {
+                while (grades[i] > 100 && grades[i] < 0) {
                     System.out.print("Invalid. Reinput");
                     grades[i] = input.nextInt();
                 }

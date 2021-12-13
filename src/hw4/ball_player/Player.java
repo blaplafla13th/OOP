@@ -23,8 +23,7 @@ public class Player {
 
     public boolean near(Ball ball) {
         double dis = Math.sqrt(Math.pow((x - ball.getX()), 2) + Math.pow((y - ball.getY()), 2) + Math.pow((z - ball.getZ()), 2));
-        if (dis < 8) return true;
-        return false;
+        return dis < 8;
     }
 
     public void kick(Ball ball) {

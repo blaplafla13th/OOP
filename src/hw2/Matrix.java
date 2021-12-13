@@ -98,15 +98,13 @@ public class Matrix {
 
     public static boolean haveSameDimension(int[][] matrix1, int[][] matrix2) {
         if (isLegalMatrix(matrix1) && isLegalMatrix(matrix2))
-            if (matrix1.length == matrix2.length && matrix1[0].length == matrix2[0].length)
-                return true;
+            return matrix1.length == matrix2.length && matrix1[0].length == matrix2[0].length;
         return false;
     }
 
     public static boolean haveSameDimension(double[][] matrix1, double[][] matrix2) {
         if (isLegalMatrix(matrix1) && isLegalMatrix(matrix2))
-            if (matrix1.length == matrix2.length && matrix1[0].length == matrix2[0].length)
-                return true;
+            return matrix1.length == matrix2.length && matrix1[0].length == matrix2[0].length;
         return false;
     }
 

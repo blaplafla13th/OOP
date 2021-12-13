@@ -46,7 +46,7 @@ public class PerfectNumberList {
         for (int i = 1; i <= num / 2; i++) {
             if (num % i == 0) sum += i;
         }
-        return (sum == num) ? true : false;
+        return sum == num;
     }
 
     public static boolean isDeficient(int num) {
@@ -54,7 +54,7 @@ public class PerfectNumberList {
         for (int i = 1; i <= num / 2; i++) {
             if (num % i == 0) sum += i;
         }
-        return (sum < num) ? true : false;
+        return sum < num;
     }
 
     public static int[] copyOf(int[] array, int newLength) {

@@ -57,9 +57,7 @@ public class MyDate {
     }
 
     public static boolean isLeapYear(int year) {
-        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
-            return true;
-        return false;
+        return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
     }
 
     public static boolean isValidDate(int year, int month, int day) {
@@ -73,10 +71,7 @@ public class MyDate {
         if (isLeapYear(year) && month == 2) {
             maxDay = MAX_DAYS_IN_MONTH[0];
         }
-        if (day < 0 || day > maxDay) {
-            return false;
-        }
-        return true;
+        return day >= 0 && day <= maxDay;
     }
 
     public static int getDayOfWeek(int year, int month, int day) {

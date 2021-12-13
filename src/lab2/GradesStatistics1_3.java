@@ -10,7 +10,7 @@ public class GradesStatistics1_3 {
         int minimum = 101;
         int maximum = -1;
         double sum = 0;
-        double average = 0.0;
+        double average;
         int[] grades;
 
         System.out.print("Enter the number of students: ");
@@ -21,7 +21,7 @@ public class GradesStatistics1_3 {
             for (int i = 0; i < numStudents; ++i) {
                 System.out.printf("Enter the grade for students %d: ", (i+1));
                 grades[i] = input.nextInt();
-                while (i > 100 && i < 0) {
+                while (grades[i] > 100 && grades[i] < 0) {
                     System.out.print("Invalid. Reinput: ");
                     grades[i] = input.nextInt();
                 }

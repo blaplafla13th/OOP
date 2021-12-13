@@ -2,7 +2,7 @@ package hw2;
 
 public class LinearSearch {
     public static void main(String[] args) {
-        int array[] = {1, 8, 6, 3, 9, 2, 4, 7, 5, 0};
+        int[] array = {1, 8, 6, 3, 9, 2, 4, 7, 5, 0};
         int key = 7;
         if (linearSearch(array, key))
             System.out.printf("Index = %d", linearSearchIndex(array, key));

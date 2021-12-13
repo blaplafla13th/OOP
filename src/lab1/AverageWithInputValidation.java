@@ -17,7 +17,6 @@ public class AverageWithInputValidation {
                 numberIn = input.nextInt();
                 if (numberIn > 100 || numberIn < 0){
                     System.out.println("Invalid input , try again ...");
-                    continue;
                 }
                 else isValid=true;
             }while (!isValid);

@@ -1,7 +1,7 @@
 package hw6.resizable;
 
 public interface GeometricObject {
-    public double getPerimeter();
+    double getPerimeter();
 
-    public double getArea();
+    double getArea();
 }

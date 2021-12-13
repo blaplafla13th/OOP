@@ -1,7 +1,7 @@
 package lab1;
 
 public class ComputePI12 {
-    public static void main(String args[]){
+    public static void main(String[] args){
         int MAX_TERM = 10000;
         double sum = 0.0;
         for(int term = 1; term <= MAX_TERM; term++){

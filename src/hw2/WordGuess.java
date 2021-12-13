@@ -6,7 +6,7 @@ public class WordGuess {
     public static void main(String[] args) {
         //args=new String[1];
         //args[0]="Lorem Ipsum";
-        final String SECRET=args[0].toUpperCase();
+        final String SECRET = args[0].toUpperCase();
         final char[] answer = SECRET.toUpperCase().toCharArray();
         int[] status = new int[answer.length];
         int turn = 1;

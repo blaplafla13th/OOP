@@ -9,7 +9,7 @@ public class GradesStatistics2_11 {
         int minimum = 101;
         int maximum = -1;
         double sum = 0;
-        double average = 0.0;
+        double average;
         double median;
         double standardDeviation;
         int[] grades;
@@ -22,7 +22,7 @@ public class GradesStatistics2_11 {
             for (int i = 0; i < numStudents; ++i) {
                 System.out.printf("Enter the grade for students %d: ", (i + 1));
                 grades[i] = input.nextInt();
-                while (i > 100 && i < 0) {
+                while (grades[i] > 100 && grades[i] < 0) {
                     System.out.print("Invalid. Reinput: ");
                     grades[i] = input.nextInt();
                 }
@@ -55,24 +55,23 @@ public class GradesStatistics2_11 {
         }
     }
 
-    public static double calcMedian(int array[]) {
+    public static double calcMedian(int[] array) {
         int n = array.length;
         sortArray(array);
         if (n % 2 != 0)
-            return (double) array[n / 2];
+            return array[n / 2];
         return (double) (array[(n - 1) / 2] + array[n / 2]) / 2.0;
     }
 
-    public static double calcAvg(int array[]) {
+    public static double calcAvg(int[] array) {
         if (array.length == 0) return 0;
         double sum = 0.0;
         for (int i = 0; i < array.length; ++i)
             sum += array[i];
-        double average = sum / array.length;
-        return average;
+        return sum / array.length;
     }
 
-    public static double calcStandardDeviatation(int array[]) {
+    public static double calcStandardDeviatation(int[] array) {
         int n = array.length;
         double avg = calcAvg(array);
         double standardDeviation=0.0;

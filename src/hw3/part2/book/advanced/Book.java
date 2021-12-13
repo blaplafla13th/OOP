@@ -44,28 +44,25 @@ public class Book {
     }
 
     public String getAuthorName() {
-        String out="";
+        StringBuilder out= new StringBuilder();
         for (int i = 0; i < authors.length; i++) {
             if (i == authors.length - 1)
-                out += authors[i].getName();
+                out.append(authors[i].getName());
             else
-                out += authors[i].getName() + ", ";
+                out.append(authors[i].getName()).append(", ");
         }
-        return out;
+        return out.toString();
     }
     @Override
     public String toString() {
-        String out = "Book[" + "name=" + name + ", authors{";
+        StringBuilder out = new StringBuilder("Book[" + "name=" + name + ", authors{");
         for (int i = 0; i < authors.length; i++) {
             if (i == authors.length - 1)
-                out += authors[i] + "}";
+                out.append(authors[i]).append("}");
             else
-                out += authors[i] + ", ";
+                out.append(authors[i]).append(", ");
         }
-        out = out +
-                ", price=" + price +
-                ", qty=" + qty +
-                ']';
-        return out;
+        out.append(", price=").append(price).append(", qty=").append(qty).append(']');
+        return out.toString();
     }
 }

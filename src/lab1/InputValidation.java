@@ -13,7 +13,6 @@ public class InputValidation {
                 numberIn = input.nextInt();
                 if (!(numberIn > 0 && numberIn < 10) && !(numberIn < 100 && numberIn>90)){
                     System.out.println("Invalid input , try again ...");
-                    continue;
                 }
                 else isValid=true;
             }while (!isValid);

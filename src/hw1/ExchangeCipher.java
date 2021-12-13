@@ -8,7 +8,7 @@ public class ExchangeCipher {
 		String inStr;
 		int inStrLen;
 		Scanner input = new Scanner(System.in);
-		String outStr="";
+		StringBuilder outStr= new StringBuilder();
 		System.out.print("Enter a plaintext string: ");
 
 		inStr = input.next().toUpperCase();
@@ -17,7 +17,7 @@ public class ExchangeCipher {
 
 		for (int charIdx = 0; charIdx < inStrLen; ++charIdx) {
 			char temp = (char) ('A'+'Z'-inStr.charAt(charIdx));
-			outStr+=temp;
+			outStr.append(temp);
 		}
 		System.out.println("The plain text String is: "+outStr);
 	}

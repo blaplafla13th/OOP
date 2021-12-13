@@ -6,7 +6,7 @@ public class RadixN2DecRewrite {
     public static final String HEX_STRING = "0123456789abcdef";
 
     public static void main(String[] args) {
-        int radix = 0;
+        int radix;
         String inStr;
         Scanner input = new Scanner(System.in);
 

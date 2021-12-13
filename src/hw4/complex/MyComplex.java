@@ -46,18 +46,15 @@ public class MyComplex {
     }
 
     public boolean isReal() {
-        if (imagine == 0) return true;
-        else return false;
+        return imagine == 0;
     }
 
     public boolean isImagine() {
-        if (real == 0) return true;
-        else return false;
+        return real == 0;
     }
 
     public boolean equals(double real, double imagine) {
-        if (this.real == real && this.imagine == imagine) return true;
-        else return false;
+        return this.real == real && this.imagine == imagine;
     }
 
     public boolean equals(MyComplex another) {

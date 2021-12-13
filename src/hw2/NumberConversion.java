@@ -8,8 +8,8 @@ public class NumberConversion {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String inStr;
-        int inRadix = 0;
-        int outRadix = 0;
+        int inRadix;
+        int outRadix;
 
         System.out.print("Enter a number and radix:");
         inStr = input.nextLine();
@@ -28,7 +28,7 @@ public class NumberConversion {
 
         System.out.print("Enter the output radix:");
         outRadix = input.nextInt();
-        while (inRadix > 16 || inRadix < 2) {
+        while (outRadix > 16 || outRadix < 2) {
             System.out.print("Invalid.Enter the radix: ");
             outRadix = input.nextInt();
         }
@@ -48,13 +48,13 @@ public class NumberConversion {
 
     public static String toRadix(String inStr, int inRadix, int outRadix) {
         int number = radixN2Dec(inStr, inRadix);
-        String result = "";
+        StringBuilder result = new StringBuilder();
         while (number > 0) {
             char radix = HEX_STRING.charAt(number % outRadix);
-            result = radix + result;
+            result.insert(0, radix);
             number /= outRadix;
         }
-        return result;
+        return result.toString();
     }
 
     public static int radixN2Dec(String inStr, int radix) {

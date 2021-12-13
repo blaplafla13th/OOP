@@ -7,7 +7,7 @@ public class ReverseString {
 
         String inStr;
         int inStrLen;
-        String outStr="";
+        StringBuilder outStr= new StringBuilder();
 
         Scanner input=new Scanner(System.in);
 
@@ -18,7 +18,7 @@ public class ReverseString {
         inStrLen=inStr.length();
 
         for (int charIdx=inStrLen-1; charIdx>=0; --charIdx){
-            outStr+=inStr.charAt(charIdx);
+            outStr.append(inStr.charAt(charIdx));
         }
 
         System.out.println("The reverse of string \""+inStr+"\""+" is \""+outStr+"\".");

@@ -13,21 +13,20 @@ public class Dec2Hex {
     }
 
     public static String d2h(int n) {
-        String hexString = "";
+        StringBuilder hexString = new StringBuilder();
 
         int i = 0;
         while (n != 0) {
-            int temp = 0;
+            int temp;
             temp = n % 16;
             if (temp < 10) {
-                hexString += (char) (temp + 48);
-                i++;
+                hexString.append((char) (temp + 48));
             } else {
-                hexString += (char) (temp + 55);
-                i++;
+                hexString.append((char) (temp + 55));
             }
+            i++;
             n = n / 16;
         }
-        return hexString;
+        return hexString.toString();
     }
 }
