@@ -22,4 +22,9 @@
     - [Java Programming Basic Exercises](https://github.com/java-tester-x/javaexercises)
     - [Java Programming OOP Exercises](https://github.com/java-tester-x/JavaExercises4)
   - Thuật toán được tra tại [GeeksforGeeks](https://www.geeksforgeeks.org/fundamentals-of-algorithms/?ref=shm)
+### Ví dụ về 4 tính chất của OOP ([xem ví dụ shape hw6](src/hw6/shape))
+  - Tính đóng gói
+  - Tính đa hình
+  - Tính kế thừa
+  - Tính trừu tượng
 
