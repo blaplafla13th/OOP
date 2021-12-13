@@ -1,11 +1,11 @@
 # Bài tập JAVA_OOP
 ## Lớp Thành phần Phần mềm - MAT3372 01 kỳ 211
 
-###Info
+### Info
 * Giáo viên: Thầy Quản Thái Hà - Trường HUS 
 * Học sinh: Phạm Bá Thắng
 
-###Yêu cầu phần mềm
+### Yêu cầu phần mềm
 * IDE: Intellij IDEA Community  
 * Java version: 17  
 * ***Minimum java version: 14***  
@@ -13,7 +13,7 @@
 
   ***File đề được lưu trong folder DeBai***
 
-###Tham Khảo
+### Tham Khảo
   - [ *yet another insignificant Programming Notes* - ehchua - NTU](https://www3.ntu.edu.sg/home/ehchua/programming)
     - [Java Programming tutorial](https://www3.ntu.edu.sg/home/ehchua/programming/index.html#Java)
     - [Java Programming Basic Exercises](https://www3.ntu.edu.sg/home/ehchua/programming/java/J2a_BasicsExercises.html)
