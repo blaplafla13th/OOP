@@ -28,23 +28,23 @@ public class Menu {
             System.out.println("____________");
         }
         switch (i) {
-            case 1 -> runlab1();
-            case 2 -> runlab2();
-            case 3 -> runlab5();
-            case 4 -> runlab6();
-            case 5 -> runhw1();
-            case 6 -> runhw2();
-            case 7 -> runhw3();
-            case 8 -> runhw4();
-            case 9 -> runhw5();
-            case 10 -> runhw6();
+            case 1 -> runLab1();
+            case 2 -> runLab2();
+            case 3 -> runLab5();
+            case 4 -> runLab6();
+            case 5 -> runHw1();
+            case 6 -> runHw2();
+            case 7 -> runHw3();
+            case 8 -> runHw4();
+            case 9 -> runHw5();
+            case 10 -> runHw6();
             case 0 -> {
             }
             default -> main(arrayTest);
         }
     }
 
-    public static void runlab1() {
+    public static void runLab1() {
         int i;
         {
             System.out.println("______Menu______");
@@ -112,11 +112,11 @@ public class Menu {
             case 27 -> lab1.SumProductMinMax5.main(arrayTest);
             case 28 -> lab1.Tribonacci.main(arrayTest);
             case 0 -> main(arrayTest);
-            default -> runlab1();
+            default -> runLab1();
         }
     }
 
-    public static void runlab2() {
+    public static void runLab2() {
         int i;
         {
             System.out.println("______Menu______");
@@ -162,11 +162,11 @@ public class Menu {
             case 16 -> lab2.Search.main(arrayTest);
             case 17 -> lab2.Swap.main(arrayTest);
             case 0 -> main(arrayTest);
-            default -> runlab2();
+            default -> runLab2();
         }
     }
 
-    public static void runlab5() {
+    public static void runLab5() {
         int i;
         {
             System.out.println("______Menu______");
@@ -180,11 +180,11 @@ public class Menu {
         switch (i) {
             case 1 -> lab5.IntegerToWords.main(arrayTest);
             case 0 -> main(arrayTest);
-            default -> runlab5();
+            default -> runLab5();
         }
     }
 
-    public static void runlab6() {
+    public static void runLab6() {
         int i;
         {
             System.out.println("______Menu______");
@@ -200,11 +200,11 @@ public class Menu {
             case 1 -> lab6.discount.TestMain.main(arrayTest);
             case 2 -> lab6.polyline.TestPolyLine.main(arrayTest);
             case 0 -> main(arrayTest);
-            default -> runlab6();
+            default -> runLab6();
         }
     }
 
-    public static void runhw1() {
+    public static void runHw1() {
         int i;
         {
             System.out.println("______Menu______");
@@ -260,11 +260,11 @@ public class Menu {
             case 21 -> hw1.TimeTable.main(arrayTest);
             case 22 -> hw1.TriangularPattern.main(arrayTest);
             case 0 -> main(arrayTest);
-            default -> runhw1();
+            default -> runHw1();
         }
     }
 
-    public static void runhw2() {
+    public static void runHw2() {
         int i;
         {
             System.out.println("______Menu______");
@@ -322,11 +322,11 @@ public class Menu {
             case 22 -> hw2.TrigonometricSeries.main(arrayTest);
             case 23 -> hw2.WordGuess.main(arrayTest);
             case 0 -> main(arrayTest);
-            default -> runhw2();
+            default -> runHw2();
         }
     }
 
-    public static void runhw3() {
+    public static void runHw3() {
         int i;
         {
             System.out.println("______Menu______");
@@ -380,11 +380,11 @@ public class Menu {
             case 20 -> hw3.part2.mypoint.MyRectangleTest.main(arrayTest);
             case 21 -> hw3.part2.mypoint.MyTriangleTest.main(arrayTest);
             case 0 -> main(arrayTest);
-            default -> runhw3();
+            default -> runHw3();
         }
     }
 
-    public static void runhw4() {
+    public static void runHw4() {
         int i;
         {
             System.out.println("______Menu______");
@@ -414,11 +414,11 @@ public class Menu {
             case 8 -> hw4.TestBigInteger.main(arrayTest);
             case 9 -> hw4.time.TestMyTime.main(arrayTest);
             case 0 -> main(arrayTest);
-            default -> runhw4();
+            default -> runHw4();
         }
     }
 
-    public static void runhw5() {
+    public static void runHw5() {
         int i;
         {
             System.out.println("______Menu______");
@@ -454,11 +454,11 @@ public class Menu {
             case 11 -> hw5.part2.point.TestLineSub.main(arrayTest);
             case 12 -> hw5.part2.point.TestPoint.main(arrayTest);
             case 0 -> main(arrayTest);
-            default -> runhw5();
+            default -> runHw5();
         }
     }
 
-    public static void runhw6() {
+    public static void runHw6() {
         int i;
         {
             System.out.println("______Menu______");
@@ -486,7 +486,7 @@ public class Menu {
             case 7 -> hw6.resizable.TestResizableCircle.main(arrayTest);
             case 8 -> hw6.shape.TestMain.main(arrayTest);
             case 0 -> main(arrayTest);
-            default -> runhw6();
+            default -> runHw6();
         }
     }
 
