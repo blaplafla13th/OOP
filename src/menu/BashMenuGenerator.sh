@@ -20,6 +20,7 @@ public static void main(String[] args){" >>$file
 
 #print case
 echo "int i;" >> $file
+echo "while (true){" >>$file
 echo "{System.out.println(\"______Menu______\");" >>$file
 listFolder=()
 i=1
@@ -36,7 +37,7 @@ echo "System.out.println(\"____________\");}" >>$file
 #end print case
 
 #start switch folder
-echo "while (true){" >>$file
+
 echo "switch (i) {" >>$file
 for ((i = 0; i < ${#listFolder[@]}; i++)); do
   name=`echo ${listFolder[i]} | sed 's/l/L/g' | sed 's/h/H/g'`
@@ -58,6 +59,7 @@ for i in "${listFolder[@]}"; do
   awk -F"." '{if (NF<=2) {print $0} else if (index($0,"Test")!=0 || index($0,"App")!=0) {print $0}}'))
   #print case
   echo "int i;" >> $file
+  echo "while (true){" >>$file
   echo "{System.out.println(\"______Menu______\");" >>$file
   for ((j = 0; j < ${#listMain[@]}; j++)); do
     temp=`echo ${listMain[j]}`
@@ -71,7 +73,6 @@ for i in "${listFolder[@]}"; do
 
   #print switch case
   echo "System.out.println(\"Function Run: \");" >>$file
-  echo "while (true){" >>$file
   echo "switch (i) {" >>$file
   for ((j = 0; j < ${#listMain[@]}; j++)); do
     echo "case $((j+1)) -> ${listMain[j]}.main(arrayTest);">>$file
