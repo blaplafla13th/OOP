@@ -59,7 +59,7 @@ public class IntegerToWords {
         //read
         for (int currentLevel = maxLevel; currentLevel >= 0; currentLevel--) {
             if (Arrays.equals(splitter[currentLevel], new int[]{0, 0, 0})
-                    && (currentLevel % 3 != 0 || currentLevel == 0))
+                    && currentLevel % 3 != 0)
                 continue;
 
             toText(splitter[currentLevel], currentLevel, maxLevel);
