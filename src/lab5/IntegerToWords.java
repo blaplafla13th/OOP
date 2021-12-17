@@ -13,6 +13,7 @@ public class IntegerToWords {
         String inStr = input.nextLine().strip();
 
         char[] inNum = inStr.toCharArray();
+        try{
         for (char c : inNum) {
             int temp = (int) c - 48;
             if (temp < 0 || temp > 9) {
@@ -21,6 +22,9 @@ public class IntegerToWords {
             }
         }
         read(inNum);
+        } catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Bạn chưa nhập gì cả");
+        }
     }
 
     public static void read(char[] input) {
