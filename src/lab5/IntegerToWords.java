@@ -70,7 +70,7 @@ public class IntegerToWords {
     }
 
     public static void toText(int[] num, int currentLevel, int maxLevel) {
-        if (num[0] == num[1] && num[1] == num[2] && num[2] == 0) {
+        if (Arrays.equals(num, new int[]{0, 0, 0})) {
             System.out.print("");
             return;
         }
