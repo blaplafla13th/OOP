@@ -1,5 +1,6 @@
 package lab5;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class IntegerToWords {
@@ -12,17 +13,17 @@ public class IntegerToWords {
         System.out.print("Nhập số: ");
         String inStr = input.nextLine().strip();
 
-        char[] inNum = inStr.toCharArray();
-        try{
-        for (char c : inNum) {
-            int temp = (int) c - 48;
-            if (temp < 0 || temp > 9) {
-                System.out.println("Không phải số tự nhiên");
-                return;
+        try {
+            char[] inNum = inStr.toCharArray();
+            for (char c : inNum) {
+                int temp = (int) c - 48;
+                if (temp < 0 || temp > 9) {
+                    System.out.println("Không phải số tự nhiên");
+                    return;
+                }
             }
-        }
-        read(inNum);
-        } catch (ArrayIndexOutOfBoundsException e){
+            read(inNum);
+        } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Bạn chưa nhập gì cả");
         }
     }
@@ -57,8 +58,9 @@ public class IntegerToWords {
 
         //read
         for (int currentLevel = maxLevel; currentLevel >= 0; currentLevel--) {
-            if (splitter[currentLevel][0] == 0 && splitter[currentLevel][1] == 0
-                    && splitter[currentLevel][2] == 0 && (currentLevel % 3 != 0 || currentLevel == 0)) continue;
+            if (Arrays.equals(splitter[currentLevel], new int[]{0, 0, 0})
+                    && (currentLevel % 3 != 0 || currentLevel == 0))
+                continue;
 
             toText(splitter[currentLevel], currentLevel, maxLevel);
 
