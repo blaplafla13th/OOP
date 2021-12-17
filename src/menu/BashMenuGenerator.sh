@@ -36,12 +36,14 @@ echo "System.out.println(\"____________\");}" >>$file
 #end print case
 
 #start switch folder
+echo "while (true){" >>$file
 echo "switch (i) {" >>$file
 for ((i = 0; i < ${#listFolder[@]}; i++)); do
-  echo "case $((i+1)) -> run${listFolder[i]}();" >>$file
+  name=`echo ${listFolder[i]} | sed 's/l/L/g' | sed 's/h/H/g'`
+  echo "case $((i+1)) -> run$name();" >>$file
 done
-echo "case 0 -> {}">>$file
-echo "default -> main(arrayTest);">>$file
+echo "case 0 -> System.exit(0);">>$file
+echo "}" >>$file
 echo "}" >>$file
 #end switch folder
 echo "}" >>$file
@@ -50,7 +52,8 @@ echo "}" >>$file
 #start mini func
 
 for i in "${listFolder[@]}"; do
-  echo "public static void run$i(){" >>$file
+  name=`echo $i | sed 's/l/L/g' | sed 's/h/H/g' `
+  echo "public static void run$name(){" >>$file
   listMain=($(find ./$i -name "*.java" | grep -v "menu" | sed 's/\.\///g' | sed 's/\//./g' | sed 's/.java//g' |
   awk -F"." '{if (NF<=2) {print $0} else if (index($0,"Test")!=0 || index($0,"App")!=0) {print $0}}'))
   #print case
@@ -68,12 +71,13 @@ for i in "${listFolder[@]}"; do
 
   #print switch case
   echo "System.out.println(\"Function Run: \");" >>$file
+  echo "while (true){" >>$file
   echo "switch (i) {" >>$file
   for ((j = 0; j < ${#listMain[@]}; j++)); do
     echo "case $((j+1)) -> ${listMain[j]}.main(arrayTest);">>$file
   done
   echo "case 0 -> main(arrayTest);">>$file
-  echo "default -> run$i();">>$file
+  echo "}" >>$file
   echo "}" >>$file
   #end print switch case
   echo "}" >>$file

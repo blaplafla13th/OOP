@@ -27,20 +27,20 @@ public class Menu {
             i = input(10);
             System.out.println("____________");
         }
-        switch (i) {
-            case 1 -> runLab1();
-            case 2 -> runLab2();
-            case 3 -> runLab5();
-            case 4 -> runLab6();
-            case 5 -> runHw1();
-            case 6 -> runHw2();
-            case 7 -> runHw3();
-            case 8 -> runHw4();
-            case 9 -> runHw5();
-            case 10 -> runHw6();
-            case 0 -> {
+        while (true) {
+            switch (i) {
+                case 1 -> runLab1();
+                case 2 -> runLab2();
+                case 3 -> runLab5();
+                case 4 -> runLab6();
+                case 5 -> runHw1();
+                case 6 -> runHw2();
+                case 7 -> runHw3();
+                case 8 -> runHw4();
+                case 9 -> runHw5();
+                case 10 -> runHw6();
+                case 0 -> System.exit(0);
             }
-            default -> main(arrayTest);
         }
     }
 
@@ -82,37 +82,38 @@ public class Menu {
             System.out.println("____________");
         }
         System.out.println("Function Run: ");
-        switch (i) {
-            case 1 -> lab1.AverageWithInputValidation.main(arrayTest);
-            case 2 -> lab1.CheckOddEven.main(arrayTest);
-            case 3 -> lab1.CheckPassFail.main(arrayTest);
-            case 4 -> lab1.CircleComputation.main(arrayTest);
-            case 5 -> lab1.ComputePI12.main(arrayTest);
-            case 6 -> lab1.ComputerPI.main(arrayTest);
-            case 7 -> lab1.CylinderComputation.main(arrayTest);
-            case 8 -> lab1.ExtractDigits.main(arrayTest);
-            case 9 -> lab1.Fibonacci.main(arrayTest);
-            case 10 -> lab1.HarmonicSum.main(arrayTest);
-            case 11 -> lab1.InputValidation.main(arrayTest);
-            case 12 -> lab1.PensionContributionCalculator.main(arrayTest);
-            case 13 -> lab1.PensionContributionCalculatorWithSentinel.main(arrayTest);
-            case 14 -> lab1.PrintDayInWordA.main(arrayTest);
-            case 15 -> lab1.PrintDayInWordB.main(arrayTest);
-            case 16 -> lab1.PrintNumberInWordA.main(arrayTest);
-            case 17 -> lab1.PrintNumberInWordB.main(arrayTest);
-            case 18 -> lab1.ReverseInt.main(arrayTest);
-            case 19 -> lab1.SphereComputation.main(arrayTest);
-            case 20 -> lab1.SumAverageRunningInt.main(arrayTest);
-            case 21 -> lab1.SumAverageRunningInt1.main(arrayTest);
-            case 22 -> lab1.SumAverageRunningInt2.main(arrayTest);
-            case 23 -> lab1.SumAverageRunningInt4.main(arrayTest);
-            case 24 -> lab1.SumAverageRunningInt5.main(arrayTest);
-            case 25 -> lab1.SumAverageRunningInt6.main(arrayTest);
-            case 26 -> lab1.SumProductMinMax3.main(arrayTest);
-            case 27 -> lab1.SumProductMinMax5.main(arrayTest);
-            case 28 -> lab1.Tribonacci.main(arrayTest);
-            case 0 -> main(arrayTest);
-            default -> runLab1();
+        while (true) {
+            switch (i) {
+                case 1 -> lab1.AverageWithInputValidation.main(arrayTest);
+                case 2 -> lab1.CheckOddEven.main(arrayTest);
+                case 3 -> lab1.CheckPassFail.main(arrayTest);
+                case 4 -> lab1.CircleComputation.main(arrayTest);
+                case 5 -> lab1.ComputePI12.main(arrayTest);
+                case 6 -> lab1.ComputerPI.main(arrayTest);
+                case 7 -> lab1.CylinderComputation.main(arrayTest);
+                case 8 -> lab1.ExtractDigits.main(arrayTest);
+                case 9 -> lab1.Fibonacci.main(arrayTest);
+                case 10 -> lab1.HarmonicSum.main(arrayTest);
+                case 11 -> lab1.InputValidation.main(arrayTest);
+                case 12 -> lab1.PensionContributionCalculator.main(arrayTest);
+                case 13 -> lab1.PensionContributionCalculatorWithSentinel.main(arrayTest);
+                case 14 -> lab1.PrintDayInWordA.main(arrayTest);
+                case 15 -> lab1.PrintDayInWordB.main(arrayTest);
+                case 16 -> lab1.PrintNumberInWordA.main(arrayTest);
+                case 17 -> lab1.PrintNumberInWordB.main(arrayTest);
+                case 18 -> lab1.ReverseInt.main(arrayTest);
+                case 19 -> lab1.SphereComputation.main(arrayTest);
+                case 20 -> lab1.SumAverageRunningInt.main(arrayTest);
+                case 21 -> lab1.SumAverageRunningInt1.main(arrayTest);
+                case 22 -> lab1.SumAverageRunningInt2.main(arrayTest);
+                case 23 -> lab1.SumAverageRunningInt4.main(arrayTest);
+                case 24 -> lab1.SumAverageRunningInt5.main(arrayTest);
+                case 25 -> lab1.SumAverageRunningInt6.main(arrayTest);
+                case 26 -> lab1.SumProductMinMax3.main(arrayTest);
+                case 27 -> lab1.SumProductMinMax5.main(arrayTest);
+                case 28 -> lab1.Tribonacci.main(arrayTest);
+                case 0 -> main(arrayTest);
+            }
         }
     }
 
@@ -143,26 +144,27 @@ public class Menu {
             System.out.println("____________");
         }
         System.out.println("Function Run: ");
-        switch (i) {
-            case 1 -> lab2.ArrayToString.main(arrayTest);
-            case 2 -> lab2.Contains.main(arrayTest);
-            case 3 -> lab2.CopyOf.main(arrayTest);
-            case 4 -> lab2.Dec2Hex.main(arrayTest);
-            case 5 -> lab2.Equals.main(arrayTest);
-            case 6 -> lab2.Exponent.main(arrayTest);
-            case 7 -> lab2.GradesHistogram.main(arrayTest);
-            case 8 -> lab2.GradesStatistics1_3.main(arrayTest);
-            case 9 -> lab2.GradesStatistics2_11.main(arrayTest);
-            case 10 -> lab2.Hex2Bin.main(arrayTest);
-            case 11 -> lab2.MagicSum.main(arrayTest);
-            case 12 -> lab2.Print.main(arrayTest);
-            case 13 -> lab2.PrintArray.main(arrayTest);
-            case 14 -> lab2.PrintArrayInStars.main(arrayTest);
-            case 15 -> lab2.Reverse.main(arrayTest);
-            case 16 -> lab2.Search.main(arrayTest);
-            case 17 -> lab2.Swap.main(arrayTest);
-            case 0 -> main(arrayTest);
-            default -> runLab2();
+        while (true) {
+            switch (i) {
+                case 1 -> lab2.ArrayToString.main(arrayTest);
+                case 2 -> lab2.Contains.main(arrayTest);
+                case 3 -> lab2.CopyOf.main(arrayTest);
+                case 4 -> lab2.Dec2Hex.main(arrayTest);
+                case 5 -> lab2.Equals.main(arrayTest);
+                case 6 -> lab2.Exponent.main(arrayTest);
+                case 7 -> lab2.GradesHistogram.main(arrayTest);
+                case 8 -> lab2.GradesStatistics1_3.main(arrayTest);
+                case 9 -> lab2.GradesStatistics2_11.main(arrayTest);
+                case 10 -> lab2.Hex2Bin.main(arrayTest);
+                case 11 -> lab2.MagicSum.main(arrayTest);
+                case 12 -> lab2.Print.main(arrayTest);
+                case 13 -> lab2.PrintArray.main(arrayTest);
+                case 14 -> lab2.PrintArrayInStars.main(arrayTest);
+                case 15 -> lab2.Reverse.main(arrayTest);
+                case 16 -> lab2.Search.main(arrayTest);
+                case 17 -> lab2.Swap.main(arrayTest);
+                case 0 -> main(arrayTest);
+            }
         }
     }
 
@@ -177,10 +179,11 @@ public class Menu {
             System.out.println("____________");
         }
         System.out.println("Function Run: ");
-        switch (i) {
-            case 1 -> lab5.IntegerToWords.main(arrayTest);
-            case 0 -> main(arrayTest);
-            default -> runLab5();
+        while (true) {
+            switch (i) {
+                case 1 -> lab5.IntegerToWords.main(arrayTest);
+                case 0 -> main(arrayTest);
+            }
         }
     }
 
@@ -196,11 +199,12 @@ public class Menu {
             System.out.println("____________");
         }
         System.out.println("Function Run: ");
-        switch (i) {
-            case 1 -> lab6.discount.TestMain.main(arrayTest);
-            case 2 -> lab6.polyline.TestPolyLine.main(arrayTest);
-            case 0 -> main(arrayTest);
-            default -> runLab6();
+        while (true) {
+            switch (i) {
+                case 1 -> lab6.discount.TestMain.main(arrayTest);
+                case 2 -> lab6.polyline.TestPolyLine.main(arrayTest);
+                case 0 -> main(arrayTest);
+            }
         }
     }
 
@@ -236,31 +240,32 @@ public class Menu {
             System.out.println("____________");
         }
         System.out.println("Function Run: ");
-        switch (i) {
-            case 1 -> hw1.Bin2Dec.main(arrayTest);
-            case 2 -> hw1.BoxPattern.main(arrayTest);
-            case 3 -> hw1.CeasarCode.main(arrayTest);
-            case 4 -> hw1.CheckerPattern.main(arrayTest);
-            case 5 -> hw1.CheckHexStr.main(arrayTest);
-            case 6 -> hw1.CountVowelsDigits.main(arrayTest);
-            case 7 -> hw1.DecipherCeasarCode.main(arrayTest);
-            case 8 -> hw1.ExchangeCipher.main(arrayTest);
-            case 9 -> hw1.Factorial.main(arrayTest);
-            case 10 -> hw1.Hex2Dec.main(arrayTest);
-            case 11 -> hw1.HillPattern.main(arrayTest);
-            case 12 -> hw1.Oct2Dec.main(arrayTest);
-            case 13 -> hw1.PhoneKeyPadA.main(arrayTest);
-            case 14 -> hw1.PhoneKeyPadB.main(arrayTest);
-            case 15 -> hw1.RadixN2Dec.main(arrayTest);
-            case 16 -> hw1.RadixN2DecRewrite.main(arrayTest);
-            case 17 -> hw1.ReverseString.main(arrayTest);
-            case 18 -> hw1.SquarePattern.main(arrayTest);
-            case 19 -> hw1.SquarePattern1.main(arrayTest);
-            case 20 -> hw1.TestPalindromicPhrase.main(arrayTest);
-            case 21 -> hw1.TimeTable.main(arrayTest);
-            case 22 -> hw1.TriangularPattern.main(arrayTest);
-            case 0 -> main(arrayTest);
-            default -> runHw1();
+        while (true) {
+            switch (i) {
+                case 1 -> hw1.Bin2Dec.main(arrayTest);
+                case 2 -> hw1.BoxPattern.main(arrayTest);
+                case 3 -> hw1.CeasarCode.main(arrayTest);
+                case 4 -> hw1.CheckerPattern.main(arrayTest);
+                case 5 -> hw1.CheckHexStr.main(arrayTest);
+                case 6 -> hw1.CountVowelsDigits.main(arrayTest);
+                case 7 -> hw1.DecipherCeasarCode.main(arrayTest);
+                case 8 -> hw1.ExchangeCipher.main(arrayTest);
+                case 9 -> hw1.Factorial.main(arrayTest);
+                case 10 -> hw1.Hex2Dec.main(arrayTest);
+                case 11 -> hw1.HillPattern.main(arrayTest);
+                case 12 -> hw1.Oct2Dec.main(arrayTest);
+                case 13 -> hw1.PhoneKeyPadA.main(arrayTest);
+                case 14 -> hw1.PhoneKeyPadB.main(arrayTest);
+                case 15 -> hw1.RadixN2Dec.main(arrayTest);
+                case 16 -> hw1.RadixN2DecRewrite.main(arrayTest);
+                case 17 -> hw1.ReverseString.main(arrayTest);
+                case 18 -> hw1.SquarePattern.main(arrayTest);
+                case 19 -> hw1.SquarePattern1.main(arrayTest);
+                case 20 -> hw1.TestPalindromicPhrase.main(arrayTest);
+                case 21 -> hw1.TimeTable.main(arrayTest);
+                case 22 -> hw1.TriangularPattern.main(arrayTest);
+                case 0 -> main(arrayTest);
+            }
         }
     }
 
@@ -297,32 +302,33 @@ public class Menu {
             System.out.println("____________");
         }
         System.out.println("Function Run: ");
-        switch (i) {
-            case 1 -> hw2.BubbleSort.main(arrayTest);
-            case 2 -> hw2.DateUtil.main(arrayTest);
-            case 3 -> hw2.FactorialHandlingOverflow.main(arrayTest);
-            case 4 -> hw2.FactorialRecursion.main(arrayTest);
-            case 5 -> hw2.FibonacciIntHandlingOverflow.main(arrayTest);
-            case 6 -> hw2.FibonacciRecursive.main(arrayTest);
-            case 7 -> hw2.GCD.main(arrayTest);
-            case 8 -> hw2.GCDRecursive.main(arrayTest);
-            case 9 -> hw2.InsertionSort.main(arrayTest);
-            case 10 -> hw2.LengthOfARunningNumberSequenceRecursive.main(arrayTest);
-            case 11 -> hw2.LinearSearch.main(arrayTest);
-            case 12 -> hw2.Matrix.main(arrayTest);
-            case 13 -> hw2.NumberConversion.main(arrayTest);
-            case 14 -> hw2.NumberGuest.main(arrayTest);
-            case 15 -> hw2.PerfectNumberList.main(arrayTest);
-            case 16 -> hw2.PerfectPrimeFactorList.main(arrayTest);
-            case 17 -> hw2.PrimeList.main(arrayTest);
-            case 18 -> hw2.RecursiveBinarySearch.main(arrayTest);
-            case 19 -> hw2.SelectionSort.main(arrayTest);
-            case 20 -> hw2.SpecialSeries.main(arrayTest);
-            case 21 -> hw2.TribonacciIntHandlingOverflow.main(arrayTest);
-            case 22 -> hw2.TrigonometricSeries.main(arrayTest);
-            case 23 -> hw2.WordGuess.main(arrayTest);
-            case 0 -> main(arrayTest);
-            default -> runHw2();
+        while (true) {
+            switch (i) {
+                case 1 -> hw2.BubbleSort.main(arrayTest);
+                case 2 -> hw2.DateUtil.main(arrayTest);
+                case 3 -> hw2.FactorialHandlingOverflow.main(arrayTest);
+                case 4 -> hw2.FactorialRecursion.main(arrayTest);
+                case 5 -> hw2.FibonacciIntHandlingOverflow.main(arrayTest);
+                case 6 -> hw2.FibonacciRecursive.main(arrayTest);
+                case 7 -> hw2.GCD.main(arrayTest);
+                case 8 -> hw2.GCDRecursive.main(arrayTest);
+                case 9 -> hw2.InsertionSort.main(arrayTest);
+                case 10 -> hw2.LengthOfARunningNumberSequenceRecursive.main(arrayTest);
+                case 11 -> hw2.LinearSearch.main(arrayTest);
+                case 12 -> hw2.Matrix.main(arrayTest);
+                case 13 -> hw2.NumberConversion.main(arrayTest);
+                case 14 -> hw2.NumberGuest.main(arrayTest);
+                case 15 -> hw2.PerfectNumberList.main(arrayTest);
+                case 16 -> hw2.PerfectPrimeFactorList.main(arrayTest);
+                case 17 -> hw2.PrimeList.main(arrayTest);
+                case 18 -> hw2.RecursiveBinarySearch.main(arrayTest);
+                case 19 -> hw2.SelectionSort.main(arrayTest);
+                case 20 -> hw2.SpecialSeries.main(arrayTest);
+                case 21 -> hw2.TribonacciIntHandlingOverflow.main(arrayTest);
+                case 22 -> hw2.TrigonometricSeries.main(arrayTest);
+                case 23 -> hw2.WordGuess.main(arrayTest);
+                case 0 -> main(arrayTest);
+            }
         }
     }
 
@@ -357,30 +363,31 @@ public class Menu {
             System.out.println("____________");
         }
         System.out.println("Function Run: ");
-        switch (i) {
-            case 1 -> hw3.part1.account.TestMain.main(arrayTest);
-            case 2 -> hw3.part1.ball.TestMain.main(arrayTest);
-            case 3 -> hw3.part1.circle1.TestCircle.main(arrayTest);
-            case 4 -> hw3.part1.circle2.TestMain.main(arrayTest);
-            case 5 -> hw3.part1.date.TestMain.main(arrayTest);
-            case 6 -> hw3.part1.employee.TestMain.main(arrayTest);
-            case 7 -> hw3.part1.invoiceitem.TestMain.main(arrayTest);
-            case 8 -> hw3.part1.rectangle.TestMain.main(arrayTest);
-            case 9 -> hw3.part1.time.TestMain.main(arrayTest);
-            case 10 -> hw3.part2.account.TestMain.main(arrayTest);
-            case 11 -> hw3.part2.book.advanced.TestAuthor.main(arrayTest);
-            case 12 -> hw3.part2.book.advanced.TestBook.main(arrayTest);
-            case 13 -> hw3.part2.book.introduction.TestAuthor.main(arrayTest);
-            case 14 -> hw3.part2.book.introduction.TestBook.main(arrayTest);
-            case 15 -> hw3.part2.book.yourturn.TestMain.main(arrayTest);
-            case 16 -> hw3.part2.invoice.TestMain.main(arrayTest);
-            case 17 -> hw3.part2.mypoint.MyCircleTest.main(arrayTest);
-            case 18 -> hw3.part2.mypoint.MyLineTest.main(arrayTest);
-            case 19 -> hw3.part2.mypoint.MyPointTest.main(arrayTest);
-            case 20 -> hw3.part2.mypoint.MyRectangleTest.main(arrayTest);
-            case 21 -> hw3.part2.mypoint.MyTriangleTest.main(arrayTest);
-            case 0 -> main(arrayTest);
-            default -> runHw3();
+        while (true) {
+            switch (i) {
+                case 1 -> hw3.part1.account.TestMain.main(arrayTest);
+                case 2 -> hw3.part1.ball.TestMain.main(arrayTest);
+                case 3 -> hw3.part1.circle1.TestCircle.main(arrayTest);
+                case 4 -> hw3.part1.circle2.TestMain.main(arrayTest);
+                case 5 -> hw3.part1.date.TestMain.main(arrayTest);
+                case 6 -> hw3.part1.employee.TestMain.main(arrayTest);
+                case 7 -> hw3.part1.invoiceitem.TestMain.main(arrayTest);
+                case 8 -> hw3.part1.rectangle.TestMain.main(arrayTest);
+                case 9 -> hw3.part1.time.TestMain.main(arrayTest);
+                case 10 -> hw3.part2.account.TestMain.main(arrayTest);
+                case 11 -> hw3.part2.book.advanced.TestAuthor.main(arrayTest);
+                case 12 -> hw3.part2.book.advanced.TestBook.main(arrayTest);
+                case 13 -> hw3.part2.book.introduction.TestAuthor.main(arrayTest);
+                case 14 -> hw3.part2.book.introduction.TestBook.main(arrayTest);
+                case 15 -> hw3.part2.book.yourturn.TestMain.main(arrayTest);
+                case 16 -> hw3.part2.invoice.TestMain.main(arrayTest);
+                case 17 -> hw3.part2.mypoint.MyCircleTest.main(arrayTest);
+                case 18 -> hw3.part2.mypoint.MyLineTest.main(arrayTest);
+                case 19 -> hw3.part2.mypoint.MyPointTest.main(arrayTest);
+                case 20 -> hw3.part2.mypoint.MyRectangleTest.main(arrayTest);
+                case 21 -> hw3.part2.mypoint.MyTriangleTest.main(arrayTest);
+                case 0 -> main(arrayTest);
+            }
         }
     }
 
@@ -403,18 +410,19 @@ public class Menu {
             System.out.println("____________");
         }
         System.out.println("Function Run: ");
-        switch (i) {
-            case 1 -> hw4.ball_player.TestBall.main(arrayTest);
-            case 2 -> hw4.ball_player.TestPlayer.main(arrayTest);
-            case 3 -> hw4.bouncing_ball.TestBouncingBall.main(arrayTest);
-            case 4 -> hw4.complex.MyComplexApp.main(arrayTest);
-            case 5 -> hw4.complex.MyComplexTest.main(arrayTest);
-            case 6 -> hw4.date.MyDateTest.main(arrayTest);
-            case 7 -> hw4.polynomial.MyPolynomialTest.main(arrayTest);
-            case 8 -> hw4.TestBigInteger.main(arrayTest);
-            case 9 -> hw4.time.TestMyTime.main(arrayTest);
-            case 0 -> main(arrayTest);
-            default -> runHw4();
+        while (true) {
+            switch (i) {
+                case 1 -> hw4.ball_player.TestBall.main(arrayTest);
+                case 2 -> hw4.ball_player.TestPlayer.main(arrayTest);
+                case 3 -> hw4.bouncing_ball.TestBouncingBall.main(arrayTest);
+                case 4 -> hw4.complex.MyComplexApp.main(arrayTest);
+                case 5 -> hw4.complex.MyComplexTest.main(arrayTest);
+                case 6 -> hw4.date.MyDateTest.main(arrayTest);
+                case 7 -> hw4.polynomial.MyPolynomialTest.main(arrayTest);
+                case 8 -> hw4.TestBigInteger.main(arrayTest);
+                case 9 -> hw4.time.TestMyTime.main(arrayTest);
+                case 0 -> main(arrayTest);
+            }
         }
     }
 
@@ -440,21 +448,22 @@ public class Menu {
             System.out.println("____________");
         }
         System.out.println("Function Run: ");
-        switch (i) {
-            case 1 -> hw5.part1.animal.TestMain.main(arrayTest);
-            case 2 -> hw5.part1.circle.TestCylinder.main(arrayTest);
-            case 3 -> hw5.part1.people.TestPerson.main(arrayTest);
-            case 4 -> hw5.part1.point.TestPoint.main(arrayTest);
-            case 5 -> hw5.part1.shape.CircleTest.main(arrayTest);
-            case 6 -> hw5.part1.shape.RectangleTest.main(arrayTest);
-            case 7 -> hw5.part1.shape.ShapeTest.main(arrayTest);
-            case 8 -> hw5.part1.shape.SquareTest.main(arrayTest);
-            case 9 -> hw5.part2.circle.CylinderTest.main(arrayTest);
-            case 10 -> hw5.part2.point.TestLine.main(arrayTest);
-            case 11 -> hw5.part2.point.TestLineSub.main(arrayTest);
-            case 12 -> hw5.part2.point.TestPoint.main(arrayTest);
-            case 0 -> main(arrayTest);
-            default -> runHw5();
+        while (true) {
+            switch (i) {
+                case 1 -> hw5.part1.animal.TestMain.main(arrayTest);
+                case 2 -> hw5.part1.circle.TestCylinder.main(arrayTest);
+                case 3 -> hw5.part1.people.TestPerson.main(arrayTest);
+                case 4 -> hw5.part1.point.TestPoint.main(arrayTest);
+                case 5 -> hw5.part1.shape.CircleTest.main(arrayTest);
+                case 6 -> hw5.part1.shape.RectangleTest.main(arrayTest);
+                case 7 -> hw5.part1.shape.ShapeTest.main(arrayTest);
+                case 8 -> hw5.part1.shape.SquareTest.main(arrayTest);
+                case 9 -> hw5.part2.circle.CylinderTest.main(arrayTest);
+                case 10 -> hw5.part2.point.TestLine.main(arrayTest);
+                case 11 -> hw5.part2.point.TestLineSub.main(arrayTest);
+                case 12 -> hw5.part2.point.TestPoint.main(arrayTest);
+                case 0 -> main(arrayTest);
+            }
         }
     }
 
@@ -476,17 +485,18 @@ public class Menu {
             System.out.println("____________");
         }
         System.out.println("Function Run: ");
-        switch (i) {
-            case 1 -> hw6.animal.TestAnimal.main(arrayTest);
-            case 2 -> hw6.geometricobject.TestMain.main(arrayTest);
-            case 3 -> hw6.movable.TestMovableCircle.main(arrayTest);
-            case 4 -> hw6.movable.TestMovablePoint.main(arrayTest);
-            case 5 -> hw6.movable.TestMovableRectangle.main(arrayTest);
-            case 6 -> hw6.resizable.TestCircle.main(arrayTest);
-            case 7 -> hw6.resizable.TestResizableCircle.main(arrayTest);
-            case 8 -> hw6.shape.TestMain.main(arrayTest);
-            case 0 -> main(arrayTest);
-            default -> runHw6();
+        while (true) {
+            switch (i) {
+                case 1 -> hw6.animal.TestAnimal.main(arrayTest);
+                case 2 -> hw6.geometricobject.TestMain.main(arrayTest);
+                case 3 -> hw6.movable.TestMovableCircle.main(arrayTest);
+                case 4 -> hw6.movable.TestMovablePoint.main(arrayTest);
+                case 5 -> hw6.movable.TestMovableRectangle.main(arrayTest);
+                case 6 -> hw6.resizable.TestCircle.main(arrayTest);
+                case 7 -> hw6.resizable.TestResizableCircle.main(arrayTest);
+                case 8 -> hw6.shape.TestMain.main(arrayTest);
+                case 0 -> main(arrayTest);
+            }
         }
     }
 
