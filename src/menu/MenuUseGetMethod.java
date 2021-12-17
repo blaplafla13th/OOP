@@ -32,20 +32,21 @@ public class MenuUseGetMethod {
             System.out.println("Không tìm thấy đối tượng");
             System.exit(2);
         }
-        System.out.println("______Menu______");
-        for (int i = 0; i < list.length; i++) {
-            System.out.printf("%d) %s\n", (i + 1), list[i].getName().replace(".java", "")
-                    .replace("OOP_", ""));
-        }
-        System.out.println("0) Exit");
-        System.out.print("Nhập lựa chọn của bạn:");
-        int option = input(list.length) - 1;
-        System.out.println("____________");
-        if (option == -1) {
-            System.out.println("Bye!");
-            System.exit(0);
-        } else if (option > list.length) {
-            return printMenu(list);
+        int option = -2;
+        while (option < -1 || option > list.length - 1) {
+            System.out.println("______Menu______");
+            for (int i = 0; i < list.length; i++) {
+                System.out.printf("%d) %s\n", (i + 1), list[i].getName().replace(".java", "")
+                        .replace("OOP_", ""));
+            }
+            System.out.println("0) Exit");
+            System.out.print("Nhập lựa chọn của bạn:");
+            option = input(list.length) - 1;
+            System.out.println("____________");
+            if (option == -1) {
+                System.out.println("Bye!");
+                System.exit(0);
+            }
         }
         return option;
     }
